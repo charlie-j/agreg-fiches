@@ -9,7 +9,7 @@ Le template de base est dans *template.tex*, chaque leçon doit être dans un *n
 cp template.tex 905.tex
 ```
 
-Les références et les développements sont dans un sous dossier, avec un fichier par dev/ref. Le fichier contient un bête *\item Ma ref \\ Des détails*. 
+Les références et les développements sont dans un sous dossier, avec un fichier par dev/ref. Il y a une command pour formatter un developpement, et une pour une référence, cf *dev/dummy.tex* et *refs/dummy.tex*.
 Toutes les commandes qui peuvent servir partout doivent être dans le *header.tex*.
 
 
