@@ -1,3 +1,7 @@
-*.log
+# Compilation de pdf
 *.aux
+*.log
+*.pdf
+
+# Fichiers compressés
 *.gz
