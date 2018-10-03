@@ -1,0 +1,9 @@
+ * Avoir deux gits splitté, l'un qui passe publique entre les promos, et un dépot privé avec les fiches "officiels" de support de cours.
+    -> voir comment on diffuse le git promos
+
+ * git publique := plein de plans, potentiellement pourris.
+ 
+ * git dpt := 
+    * des commentaires sur des références  -> un fichier tex par ref, dans un sous dossier
+    * des commentaires sur des dev  -> un fichier tex par dev, dans un sous dossier
+    * par leçons :  les indispensables/piege/ouvertures, des idées (mauvaise ? ) de structures, des bonne références, des bons dev, extrait du rapport, questions classiques.
