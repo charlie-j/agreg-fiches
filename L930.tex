@@ -1,0 +1,165 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+
+\usepackage{paralist}
+\usepackage{amsmath,amssymb}
+\usepackage{multicol}
+\usepackage{url}
+
+\title{Leçon 930 -- Sémantique des langages de programmation. Exemples.}
+
+\include{headers}
+
+\begin{document}
+
+\maketitle
+
+\secrapports
+
+\begin{rapport}{2017}
+
+    L’objectif est de formaliser ce qu’est un programme : introduction des
+    sémantiques opérationnelle et dénotationnelle, dans le but de pouvoir faire
+    des preuves de programmes, des preuves d’équivalence, des preuves de
+    correction de traduction. Ces notions sont typiquement introduites sur un
+    langage de programmation (impératif) jouet. On peut tout à fait se limiter à
+    un langage qui ne nécessite pas l’introduction des CPOs et des théorèmes de
+    point fixe généraux. En revanche, on s’attend ici à ce que les liens entre
+    sémantique opérationnelle et dénotationnelle soient étudiés (toujours dans le
+    cas d’un langage jouet). Il est aussi important que la leçon présente des
+    exemples d’utilisation des notions introduites, comme des preuves
+    d’équivalence de programmes ou des preuves de correction de programmes.
+
+\end{rapport}
+
+\secindispensables
+
+\begin{itemize}
+    \item La sémantique opérationnelle (petit/grand pas) et dénotationnelle
+        des expressions arithmétiques élémentaires.
+    \item Les sémantiques des commandes du langage jouet choisi, en en proposant 
+        aux moins deux différentes
+    \item Démontrer des résultats d'adéquation et de correction entre les 
+        sémantiques
+    \item Donner des exemples de programmes, avec une interprétation de leur 
+        correction dans une des sémantiques présentées
+    \item Justifier le choix des constructeurs du langage utilisé
+    \item Étudier les effets et leur traitement dans les différents modèles 
+        (non-terminaison, non-déterminisme, etc)
+    \item Faire le lien avec d'autres leçons~: 
+        sémantique petit pas pour le lambda-calcul et les machines de Turing,
+        sémantique à grand pas pour la logique (arbres de preuve),
+        sémantique dénotationnelle pour les expressions rationnelles (langage).
+    \item Utiliser la sémantique pour énoncer des propriétés (correction d'un
+        programme, terminaison, validité d'une optimisation...)
+\end{itemize}
+
+\secpieges
+
+\begin{itemize}
+    \item Il n'est pas nécessaire d'aller vers les langages fonctionnels
+        pour faire une bonne leçon, IMP suffit largement !
+    \item Bien faire attention aux références qui prennent des directions 
+        \emph{incompatibles} très tôt. Par exemple, si le domaine de définition
+        des variables est $\mathbb{N}$ alors l'opération de soustraction 
+        doit être \emph{binaire}, alors que dans le cas de $\mathbb{Z}$ on peut 
+        se contenter d'une soustraciton \emph{unaire}.
+    \item \temporary{Le grand classique des CPO plats, et de la boucle while qui converge 
+        en un nombre fini d'étapes... Sauf que c'est pour une valeur fixée !}
+    \item Il faut présenter les trois principales sémantiques (petit pas, grand
+        pas, dénotationnel) mais ne pas oublier de \emph{justifier} leur intérêt
+        propre ! Se demander pourquoi on en a trois est d'ailleurs pertinent...
+\end{itemize}
+
+\secidees
+
+On ne suit \emph{surtout pas} la recommandation du jury qui obfusque les
+preuves de correction/adéquation. En revanche, on découpe soigneusement la
+partie expression de la partie commandes. Enfin, on évoque l'utilisation 
+pour les preuves de hoare.
+
+Il \emph{faut} évoquer les différentes utilisations des différentes
+sémantiques. Les opérationnelles sont pratiques pour implémenter, les
+dénotationnelles pour raisonner. La notion de calcul permet-elle de définir
+une complexité ? Peut-on décrire le comportement de programmes qui ne
+terminent pas ? 
+
+Attention, l'introduction de CPO peut amener à des questions triviales, mais
+auxquelles il faut savoir répondre~: pourquoi le sup dans les fonctions est
+le sup terme à terme ? Propriété de la chaine croissante ? etc ...
+
+\begin{multicols}{3}
+    \begin{compactenum}[I.]
+        \item \textsc{Le langage IMP}
+            \begin{compactenum}[A)]
+                \item Expressions 
+                \item Commandes
+                \item Exemples 
+            \end{compactenum}
+        \columnbreak
+        \item \textsc{Expressions}
+            \begin{compactenum}[A)]
+                \item Dénotation
+                \item Grand pas
+                \item Petit pas
+            \end{compactenum}
+        \item \textsc{Commandes}
+            \begin{compactenum}[A)]
+                \item Petit pas
+                \item Grand pas
+                \item Dénotation
+            \end{compactenum}
+        \columnbreak
+        \item \textsc{Hoare}
+            \begin{compactenum}[A)]
+                \item Langage logique
+                \item Règles de hoare
+                \item Complétude
+            \end{compactenum}
+    \end{compactenum}
+\end{multicols}
+
+\secquestionsclassiques
+
+\begin{itemize}
+    \item Quel est l'intérêt des différentes sémantiques ?
+    \item Pour quelle sémantique la notion de complexité est-elle 
+        la plus naturelle ?
+    \item Pour le programme d'une centrale nucléaire, quelle sémantique 
+        paraît la plus adaptée ?
+    \item Peut-on faire un lien entre la sémantique dénotationnelle
+        et la preuve de programme ?
+    \item Calculer la sémantique dénotationnelle d'un programme 
+        avec une boucle while simple (division euclidienne, fibonacci...)
+    \item Conaissez-vous un langage pour lequel il n'y a pas 
+        de théorème d'adéquation ? De théorème de correction ?
+    \item Connaissez-vous un autre moyen de définir une sémantique ?
+        (Jeux, plus faible précondition...)
+    \item \emph{(si les CPO ont été introduits)}
+        Justifier que le $(\sup f_i) (x) = \sup f_i (x)$
+        si $f_i$ est une famille dirigée d'applications 
+        scott-continues.
+    \item Comment ajouter un choix non déterministe dans 
+        vos sémantiques ?
+    \item Comment ajouter un choix probabiliste (pièce non biaisée par exemple)
+        ?
+\end{itemize}
+
+\secreferences
+
+\begin{itemize}
+\item \temporary{Glynn Winskel}
+\item \temporary{\url{http://www.cl.cam.ac.uk/~gw104/dens.pdf}}
+    (aussi Glynn Winskel)
+\end{itemize}
+
+\secdev
+
+\begin{itemize}
+\item \temporary{Complétude de Hoare}
+\item \temporary{Équivalence de sémantiques}
+\end{itemize}
+
+
+\end{document}
