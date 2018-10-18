@@ -74,10 +74,11 @@
 
 \secidees
 
-On ne suit \emph{surtout pas} la recommandation du jury qui obfusque les
-preuves de correction/adéquation. En revanche, on découpe soigneusement la
-partie expression de la partie commandes. Enfin, on évoque l'utilisation 
-pour les preuves de hoare.
+Il n'est pas avisé de suivre la recommandation du jury sur les CPO si 
+on a les connaissances suffisantes, car utiliser des unions ensemblistes 
+complexifie l'écriture, la lecture, et augmente la taille des preuves.
+En revanche, on découpe soigneusement la
+partie expression de la partie commandes.
 
 Il \emph{faut} évoquer les différentes utilisations des différentes
 sémantiques. Les opérationnelles sont pratiques pour implémenter, les
@@ -88,37 +89,6 @@ terminent pas ?
 Attention, l'introduction de CPO peut amener à des questions triviales, mais
 auxquelles il faut savoir répondre~: pourquoi le sup dans les fonctions est
 le sup terme à terme ? Propriété de la chaine croissante ? etc ...
-
-\begin{multicols}{3}
-    \begin{compactenum}[I.]
-        \item \textsc{Le langage IMP}
-            \begin{compactenum}[A)]
-                \item Expressions 
-                \item Commandes
-                \item Exemples 
-            \end{compactenum}
-        \columnbreak
-        \item \textsc{Expressions}
-            \begin{compactenum}[A)]
-                \item Dénotation
-                \item Grand pas
-                \item Petit pas
-            \end{compactenum}
-        \item \textsc{Commandes}
-            \begin{compactenum}[A)]
-                \item Petit pas
-                \item Grand pas
-                \item Dénotation
-            \end{compactenum}
-        \columnbreak
-        \item \textsc{Hoare}
-            \begin{compactenum}[A)]
-                \item Langage logique
-                \item Règles de hoare
-                \item Complétude
-            \end{compactenum}
-    \end{compactenum}
-\end{multicols}
 
 \secquestionsclassiques
 
