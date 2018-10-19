@@ -1,11 +1,12 @@
 \ProvidesClass{agregfiche}[2018/10/07 Classe pour les fiches agreg]
 
-\LoadClass[11pt]{article}
+\LoadClass[10pt]{article}
 \RequirePackage[utf8]{inputenc}
 \RequirePackage[french]{babel}
 
 %% Format
 \RequirePackage{paralist}
+\RequirePackage{a4wide}
 \RequirePackage{multicol}
 \RequirePackage{url}
 
