@@ -10,7 +10,11 @@ cp template.tex 905.tex
 ```
 
 Les références et les développements sont dans un sous dossier, avec un fichier par dev/ref. Il y a une command pour formatter un developpement, et une pour une référence, cf *dev/dummy.tex* et *refs/dummy.tex*.
-Toutes les commandes qui peuvent servir partout doivent être dans le *header.tex*.
+Toutes les commandes qui peuvent servir partout doivent être dans le *agregfiche.cls*.
+
+# Makefile
+
+Le makefile permet via ```make all``` de compiler dans *builds/* tous les fichiers latex contenu dans le dossier. Il remplit avant des fichiers *refs.tex* et *dev.tex* qui contiennent tous les dev/refs, ce qui permet alors au *all_refs_dev.tex* de compiler.
 
 
 
