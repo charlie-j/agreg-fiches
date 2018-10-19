@@ -5,3 +5,7 @@
 
 # Fichiers compressés
 *.gz
+
+# Fichiers générés par le makefile
+dev.tex
+refs.tex
