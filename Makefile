@@ -7,13 +7,20 @@ builds/%.pdf: fiches/%.tex builds agregfiche.cls
 builds/%.pdf: %.tex builds agregfiche.cls
 	pdflatex --output-dir=builds $*.tex
 
-# TODO: faire une commande qui build tout ce qu'on peut 
-# trouver dans le dossier fiches
+all: builds
+	for file in ```ls *.tex```; do \
+		pdflatex --output-dir=builds $$file; \
+	done 
 
 .PHONY: clean 
 
 clean:
 	# TODO: sur linux / mac utiliser la commande "trash"
 	# qui gère la corbeille pour éviter les accidents...
-	rm builds/*.aux
-	rm builds/*.log
+	rm -f *.aux
+	rm -f builds/*.aux
+	rm -f *.log
+	rm -f builds/*.log
+	rm -f *.synctex.gz
+	rm -f builds/*.synctex.gz
+
