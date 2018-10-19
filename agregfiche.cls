@@ -34,7 +34,7 @@
 \newcommand{\reference}[5]{[\textit{#1}] #2 - #3 - \small{#4} \\ #5  }
 
 % \dev{Nom du Dev}{IDref}{p. 432}{lecon1,lecon2,lecon3}{Commentaires}
-\newcommand{\dev}[5]{ #1 - [\textit{#2}, \small{#3}] - #4 \\  #5  }
+\newcommand{\dev}[5]{ #1 - (#2,\textit{ \small{#3}}) - #4 \\  #5  }
 
 % À utiliser comme \begin{rapport}{année} Copié collé  du rapport \end{rapport}
 \newenvironment{rapport}[1]
