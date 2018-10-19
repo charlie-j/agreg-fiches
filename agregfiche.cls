@@ -39,7 +39,9 @@
 \newenvironment{rapport}[1]
 {
     \textbf{Rapport de jury #1}
-    \begin{quote}
+	
+    \begin{quote}\itshape\footnotesize
 }{
+
     \end{quote}
 }
