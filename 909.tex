@@ -1,6 +1,6 @@
 \documentclass{agregfiche}
 
-\title{Leçon 909-- Langages rationnels et automates finis.  Exemples et applications.}
+\title{Leçon 909 -- Langages rationnels et automates finis.  Exemples et applications.}
 
 \begin{document}
 
@@ -9,25 +9,63 @@
 \secrapports
 
 \begin{rapport}{2017}
-
+Pour cette leçon très classique, il importe de ne pas oublier de donner exemples et applications, ainsi
+que le demande l’intitulé.
+Une approche algorithmique doit être privilégiée dans la présentation des résultats classiques (déterminisation, théorème de
+Kleene, etc.) qui pourra utilement être illustrée par des exemples. Le jury pourra naturellement poser des questions telles que : connaissez-vous un algorithme pour décider de l’égalité des langages reconnus par deux automates ? quelle est sa complexité ?
+Des applications dans le domaine de l’analyse lexicale et de la compilation entrent naturellement dans
+le cadre de cette leçon.
 \end{rapport}
 
 \secindispensables
 
+\begin{itemize}
+\item  Définitions des automates finis et de la notion de langages reconnaissables. Exemples de languages reconnaissables.
+\item Existence de langages non reconnaissables. Pumping Lemma. Exemples
+\item Accessibilité, Complétude, déterminisation, minimisation.
+\item Propriétés de clôture des langages reconnaissables. 
+\item Définitions des expressions rationnelles et langages rationnels.
+\item Théorème de Kleene, connaître/mentionner les constructions pour la preuve (parmis Thompson, Glushkov, Antimirov, McNaughton-Yamada, Brozoswky).
+\end{itemize}
+
 \secpieges
+
+\begin{itemize}
+\item Si l'analyse lexical et de la compilation peuvent être un exemple d'application, ils ne doivent pas prendre une place prépondérante. Les automates à piles ne sont notamment pas au programme. On ne rentrera pas dans de nombreuses définitions pour les grammaires.
+\item Cette leçon est basique et fondamentale, il faut très bien couvrir toutes les bases, et éviter de partir trop loin théoriquement.
+\end{itemize}
 
 
 \secidees
+% to complete
+\begin{itemize}
+\item Analyse lexical et chaîne de compilation.
+\item Des questions de complexités
+\item Divers algorithmes de minisation.
+\end{itemize}
 
 
 \secquestionsclassiques
-
+\begin{itemize}
+\item Comment tester le vide d'un automate ? Commenter tester l'acceptation d'un mot ? L'inclusion de langages ? L'égalité de langages ? Obtenir le complémentaire d'un language ? Complexités ? (attention aux inputs, regexp vs. $\mathcal{A}$ déterministe vs. $\mathcal{A}$ non déterministe)
+\item Dur : Tester l'universalité d'une expression rationnel ?
+\item Automate dont le determinisé est en $2^|Q|$ ?
+\item Quelle classe de complexité est reconnu par les automates ?
+\end{itemize}
 
 \secreferences
-
+\begin{itemize}
+\item \input{refs/carton}
+\end{itemize}
 
 \secdev
+%% sketchy, to complete
+\begin{itemize}
+\item \input{dev/hopcroft}
+\item \input{dev/kleene}
+\item \input{dev/presburger}
 
+\end{itemize}
 
 
 \end{document}
