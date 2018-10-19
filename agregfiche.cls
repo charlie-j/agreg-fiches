@@ -10,10 +10,9 @@
 \RequirePackage{url}
 
 %% Maths
-\RequirePackage{amsmath,amsthm}
+\RequirePackage{amsmath,amsthm,amssymb}
 
 %% Définition des commandes
-\input{headers}
 
 \newcommand{\secindispensables}{\section{Les indispensables}}
 \newcommand{\secrapports}{\section{Extraits du Rapport}}
