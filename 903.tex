@@ -1,0 +1,72 @@
+\documentclass{agregfiche}
+
+\title{Leçon 903 -- Exemples d'algorithmes de tri. Correction et complexité.}
+
+\begin{document}
+
+\maketitle
+
+\secrapports
+
+\begin{rapport}{2018}
+
+Sur un thème aussi classique, le jury attend des candidats la plus grande précision et la plus grande rigueur.Ainsi, sur l'exemple du tri rapide, il est attendu du candidat qu'il sache décrire avec soin l'algorithme de partition et en prouver la correction en exhibant un invariant adapté. L'évaluation des complexités dans le cas le pire et en moyenne devra être menée avec rigueur : si on utilise le langage des probabilités, il importe que le candidat sache sur quel espace probabilisé il travaille.On attend également du candidat qu'il évoque la question du tri en place, des tris stables, des tris externes ainsi que la représentation en machine des collections triées.
+
+\end{rapport}
+
+\secindispensables
+
+\begin{itemize}
+    \item Représentation des données: listes, tableaux\dots{} Opérations élémentaires autorisées.
+    \item Propriétés des tris: stable, en place\dots
+    \item Algorithmes naïfs: insertion, sélection
+    \item Borne inférieure sur les tris par comparaison.
+    \item Tri asymptotiquement optimaux: diviser-pour-régner (tri fusion, tri rapide avec médian\dots) à base de structures de données (tri par tas, tri par ABR\dots)
+    \item Analyses de complexité (meilleur, pire, moyenne, probabiliste) et preuves de correction.
+    \item Tri sur-optimaux (comptage, base).
+\end{itemize}
+
+\secpieges
+
+\begin{itemize}
+    \item Cf rapport, il faut être rigoureux.
+    \item Les algorithmes (qui sont simples) doivent être connus par c\oe ur et sans hésitation.
+    \item Analyses probabilistes du tri rapide: faire très attention aux probas.
+\end{itemize}
+
+\secidees
+
+\begin{itemize}
+    \item Pourquoi étudier les tris: intérêt pratique (utiles partout, et déjà codés dans des modules) mais surtout pédagogique (des algorithmes simples pour illustrer les notions de correction, de complexité, et les paradigmes algorithmiques).
+    
+            \item Illustrer la complexité par des exemples, si les bornes sont atteintes ou pas.
+    
+    \item Parler des réseaux de tri est possible (et pas trop dur), il y a un joli développement autour du tri bitonique (voir le Cormen ed 2).
+    
+
+
+\end{itemize}
+
+\secquestionsclassiques
+
+\begin{itemize}
+    \item Donner quelques applications non-triviales du tri ?
+    \item Pourquoi veut-on un tri stable ? Un tri en place ? Un tri en ligne ?
+    \item Coût des les opérations élémentaires sur les listes et les tableaux ?
+    \item Comment améliorer le tri rapide pour qu'il soit optimal dans tous les cas ?
+\end{itemize}
+
+\secreferences
+
+\secdev
+
+\begin{itemize}
+\item \temporary{Correction d'un tri}
+\item \temporary{Complexité du tri rapide (attention)}
+\item \temporary{Borne inférieure des tris par comparaison}
+\item \temporary{Tri bitonique}
+
+\end{itemize}
+
+
+\end{document}
