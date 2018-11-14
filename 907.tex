@@ -17,11 +17,16 @@
 \secindispensables
 
 \begin{itemize}
-    \item Les algorithmes naïfs de recherche de motif
-    \item L'approche par automate au problème
-    \item Des exemples qui ne sont pas seulement de la recherche 
-        de motif ! (PLSC, distance d'édition...)
+    \item Les algorithmes naïfs de recherche de motif et la complexité
     \item Les algorithmes non naïfs de KMP et Boyer-Moore.
+    \item Recherche de motif par automate
+    \item Des exemples qui ne sont pas seulement de la recherche 
+        de motif ! (PLSC, distance d'édition)
+    \item On ne peut pas faire l'impasse sur les fonctions bordures,
+        et plus généralement les notions élémentaires de l'algorithmique
+        du texte (préfixe, suffixe, table des périodes)
+    \item Penser à justifier que les pire des cas sont atteints pour certains
+        mots
 \end{itemize}
 
 \secpieges
@@ -31,7 +36,7 @@
         à résoudre, les entrées, et les complexités des algorithmes.
         Par exemple, faire la différence entre la recherche 
         d'un motif, la recherche de $k$ motifs, la recherche 
-        d'une expression régulière \dots
+        d'une expression régulière 
 
     \item Pour la complexité, ne pas oublier de 
         considérer la taille de l'alphabet comme un paramètre !
@@ -45,59 +50,37 @@
         Cela peut vouloir dire par "problème", par "méthode", ou 
         bien par "complexité".
 
-    \item Surtout bien préciser au début de la leçon quel est le 
-        domaine étudié de manière précise. Le domaine est trop vaste 
-        pour tenir en une seule leçon: l'analyse lexicale et 
-        syntaxique par exemple doit être évitée, bien que techniquement
+    \item L'analyse lexicale et syntaxique par exemple doit être évitée, bien que techniquement
         relevant de l'algorithmique du texte.
 
-    \item Éviter de faire un développement trop technique au tableau 
-        car ce n'est agréable pour personne. Il faut rechercher 
-        des arguments intuitifs plus qu'élémntaires afin de rendre 
-        plus digestes les preuves.
-
-    \item On ne peut pas faire l'impasse sur les fonctions bordures,
-        et plus généralement les notions élémentaires de l'algorithmique
-        du texte (préfixe, suffixe, table des périodes etc).
 \end{itemize}
 
 \secidees
 
-On peut penser à séparer les algorithmes \emph{calculatoires}
-de type KMP, Boyer-Moore etc. et les \emph{constructions}
-par exemple les automates, les arbres à suffixes. La programmation
-dynamique se situant un peu entre les deux.
+\begin{itemize}
+    \item L'algorithme de Karp-Rabin
+    \item Automate de Simon
+    \item Regarder KMP sous l'angle des structure de données 
+        ou de l'algorithme (automate de Simon)
+    \item 
+        On peut aussi parler de compression de texte et codes 
+        correcteurs, mais bien attention à rester dans la leçon.
+    \item 
+        Parler des structures (automates, Aho-Corasick, Simon,
+        Suffix Tree, Suffix Trie, Suffix Array, Prefix Trie).
 
-L'algorithme de Karp-Rabin fait usage d'une structure intéressante
-de \emph{hash cyclique} qui peut faire l'objet d'une remarque.
-
-Il peut être intéressant de parler de l'automate de Simon et 
-sa complexité amortie, ainsi que les compromis temps/mémoire
-qu'il apporte. On peut d'ailleurs voir l'algorithme de Simon
-et l'automate dans deux parties séparées pour avoir plusieurs 
-angles d'attaque sur cet objet.
-
-Parler des structures (automates, Aho-Corasick, Simon,
-Suffix Tree, Suffix Trie, Suffix Array) permet d'avoir 
-des preuves plus agréables syntaxiquement et de remplir 
-une partie de la leçon.
-
-Pleins d'algorithmes de programmation dynamique peuvent 
-être utilisés dans cette leçon. On pensera en particulier 
-à la recherche de motif \emph{approximative} qui est un 
-très joli résultat.
-
-On peut aussi parler de compression de texte et codes 
-correcteurs, mais il faut
-alors savoir dire des choses non triviales tout en restant 
-proche de "l'esprit algorithmique". Parler par exemple 
-d'entropie ou de bornes théoriques semble clairement 
-en dehors de la leçon.
+    \item Recherche de motif approximative
+\end{itemize}
 
 \secquestionsclassiques
 
 \begin{itemize}
-    \item TODO
+    \item Quel algorithme est utilisé par Grep ? Libre office ?
+    \item Faire la table de bordure de tel motif.
+    \item Calculer l'automate des occurences et le faire tourner sur un exemple.
+    \item Donner un exemple de pire des cas pour les différents algorithmes.
+    \item Pourquoi est-ce que l'automate de Simon possède un nombre linéaire
+        d'arc retours ?
 \end{itemize}
 
 \secreferences

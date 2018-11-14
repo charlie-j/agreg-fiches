@@ -37,15 +37,20 @@
         correction dans une des sémantiques présentées
     \item Justifier le choix des constructeurs du langage utilisé
     \item Étudier les effets et leur traitement dans les différents modèles 
-        (non-terminaison, non-déterminisme, etc)
+        (non-terminaison, non-déterminisme)
     \item Faire le lien avec d'autres leçons~: 
         sémantique petit pas pour le lambda-calcul et les machines de Turing,
         sémantique à grand pas pour la logique (arbres de preuve),
         sémantique dénotationnelle pour les expressions rationnelles (langage).
     \item Utiliser la sémantique pour énoncer des propriétés (correction d'un
-        programme, terminaison, validité d'une optimisation...)
+        programme, terminaison, validité d'une optimisation)
 \end{itemize}
 
+\secidees
+
+\begin{itemize}
+    \item Éviter le formalisme des CPO n'est pas forcément le plus simple
+\end{itemize}
 \secpieges
 
 \begin{itemize}
@@ -56,34 +61,17 @@
         des variables est $\mathbb{N}$ alors l'opération de soustraction 
         doit être \emph{binaire}, alors que dans le cas de $\mathbb{Z}$ on peut 
         se contenter d'une soustraciton \emph{unaire}.
-    \item \temporary{Le grand classique des CPO plats, et de la boucle while qui converge 
-        en un nombre fini d'étapes... Sauf que c'est pour une valeur fixée !}
     \item Il faut présenter les trois principales sémantiques (petit pas, grand
         pas, dénotationnel) mais ne pas oublier de \emph{justifier} leur intérêt
-        propre ! Se demander pourquoi on en a trois est d'ailleurs pertinent...
+        propre ! Se demander pourquoi on en a trois est d'ailleurs pertinent.
 \end{itemize}
 
-\secidees
-
-Il n'est pas avisé de suivre la recommandation du jury sur les CPO si 
-on a les connaissances suffisantes, car utiliser des unions ensemblistes 
-complexifie l'écriture, la lecture, et augmente la taille des preuves.
-En revanche, on découpe soigneusement la
-partie expression de la partie commandes.
-
-Il \emph{faut} évoquer les différentes utilisations des différentes
-sémantiques. Les opérationnelles sont pratiques pour implémenter, les
-dénotationnelles pour raisonner. La notion de calcul permet-elle de définir
-une complexité ? Peut-on décrire le comportement de programmes qui ne
-terminent pas ? 
-
-Attention, l'introduction de CPO peut amener à des questions triviales, mais
-auxquelles il faut savoir répondre~: pourquoi le sup dans les fonctions est
-le sup terme à terme ? Propriété de la chaine croissante ? etc ...
 
 \secquestionsclassiques
 
 \begin{itemize}
+    \item \temporary{Le grand classique des CPO plats, et de la boucle while qui converge 
+        en un nombre fini d'étapes... Sauf que c'est pour une valeur fixée !}
     \item Quel est l'intérêt des différentes sémantiques ?
     \item Pour quelle sémantique la notion de complexité est-elle 
         la plus naturelle ?
@@ -96,7 +84,7 @@ le sup terme à terme ? Propriété de la chaine croissante ? etc ...
     \item Conaissez-vous un langage pour lequel il n'y a pas 
         de théorème d'adéquation ? De théorème de correction ?
     \item Connaissez-vous un autre moyen de définir une sémantique ?
-        (Jeux, plus faible précondition...)
+        (Jeux, plus faible précondition)
     \item \emph{(si les CPO ont été introduits)}
         Justifier que le $(\sup f_i) (x) = \sup f_i (x)$
         si $f_i$ est une famille dirigée d'applications 
@@ -120,6 +108,7 @@ le sup terme à terme ? Propriété de la chaine croissante ? etc ...
 \begin{itemize}
 \item \temporary{Complétude de Hoare}
 \item \temporary{Équivalence de sémantiques}
+\item \temporary{Calcul de la sémantique d'un programme (factorielle, division euclidienne)}
 \end{itemize}
 
 
