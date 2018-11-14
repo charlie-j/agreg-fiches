@@ -1,0 +1,100 @@
+
+\documentclass{agregfiche}
+
+\title{Leçon 907 -- Algorithmique du texte. Exemples et applications.}
+
+\begin{document}
+
+\maketitle
+
+\secrapports
+
+\begin{rapport}{2017}
+
+Le jury attend que le candidat aborde à la fois la complexité en temps et en
+espace. Il faut naturellement exhiber des exemples de problèmes appartenant aux
+classes de complexité introduites, et montrer les relations d’inclusion
+existantes entre ces classes, en abordant le caractère strict ou non de ces
+inclusions. Le jury s’attend à ce que les notions de réduction polynomiale, de
+problème complet pour une classe, de robustesse d’une classe vis à vis des
+modèles de calcul soient abordées. Parler de décidabilité dans cette leçon
+serait hors sujet.
+
+\end{rapport}
+
+\secindispensables
+
+\begin{itemize}
+    \item La notion de complexité en espace et en temps
+    \item La robustesse vis-à-vis du modèle de calcul 
+        (déterministe, non-déterministe, une bande, plusieurs 
+        bandes, écriture sur entrée)
+    \item Les classes usuelles ($P$, $NP$, $PSPACE$)
+    \item Notion de réduction, de problème complet
+    \item Savitch et les classes en espace
+    \item Exemples de problèmes complets sur des 
+        domaines différents (graphes, automates,
+        grammaires, logique, circuits)
+    \item Les théorèmes de hiérarchie stricte
+    \item Un petit diagramme qui permet de s'y retrouver 
+        en annexe avec les inclusions strictes et les égalités
+\end{itemize}
+
+\secidees
+
+\begin{itemize}
+    \item Les théorèmes de simulation pour les machines 
+        universelles avec des bornes fines de complexité
+    \item Les classes alternantes, le lien avec 
+        EXPSACE et la hiérarchie polynômiale (Carton)
+    \item Les classes $NL$, $co-NL$ et Immerman-Szelepcsényi
+    \item Algorithmes randomisés comme autre modèle de calcul
+        (tests de primalité, algorithme de Berlekamp,
+        polynomial identity testing, RP, coRP)
+    \item Des théorèmes de borne inférieure de simulation
+        (une bande vs deux bandes en $O(n)$ vs $O(n^2)$ 
+        pour le langage des palindromes).
+    \item Une machine qui calcule trop rapidement est un automate 
+        (Carton)
+\end{itemize}
+
+\secpieges
+
+\begin{itemize}
+    \item Ne pas centrer toute la leçon sur $P$ et $NP$
+    \item Bien expliquer la notion de réduciton polynômiale,
+        et logarithmique si on parle de $NL$
+    \item Si on parle de $NL$, bien formaliser le type de machines 
+        considérées
+\end{itemize}
+
+
+\secquestionsclassiques
+
+\begin{itemize}
+    \item Quels sont les impacts de la variation du modèle sur la complexité ?
+    \item Pourquoi utiliser le formalisme des machines de Turing 
+        plutôt qu'un autre ($\lambda$-calcul, fonctions récursives) ?
+    \item Citer une classe qui n'est pas $P$, $NP$ ou $PSPACE$
+    \item Montrer que tel problème $X$ est $C$-complet.
+\end{itemize}
+
+\secreferences
+
+\begin{itemize}
+\item \temporary{Carton}
+\item \temporary{Arora Barak}
+\end{itemize}
+
+\secdev
+
+\begin{itemize}
+    \item \temporary{Hiérarchie en temps et en espace}
+    \item \temporary{Immerman Szelepcseniy}
+    \item \temporary{NP-complétude d'un problème}
+    \item \temporary{2SAT est $NL$-complet et en temps linéaire sur une 
+        machine RAM}
+\end{itemize}
+
+
+\end{document}
