@@ -26,6 +26,13 @@ serait hors sujet.
 
 \begin{itemize}
     \item La notion de complexité en espace et en temps
+        avec les inclusions évidentes entre elles
+    \item Le problème "classiquement complet"
+        \begin{equation}
+            L = \left\{ (M, x, 1^t) ~|~ \langle M, x \rangle \text{ termine en
+                temps (resp. espace) }\leq t
+            \right\}
+        \end{equation}
     \item La robustesse vis-à-vis du modèle de calcul 
         (déterministe, non-déterministe, une bande, plusieurs 
         bandes, écriture sur entrée)
@@ -56,6 +63,11 @@ serait hors sujet.
         pour le langage des palindromes).
     \item Une machine qui calcule trop rapidement est un automate 
         (Carton)
+    \item Développer le côté logique (2SAT, HORNSAT, SAT, QBF, CTLSAT).
+    \item Les arguments de padding peuvent faire de jolis résultats 
+        ($NSPACE = SPACE$ via Savitch, si $P = NP$ alors $EXP = NEXP$)
+    \item S'il existe un problème $NP$-complet sur un langage unaire,
+        alors $P = NP$.
 \end{itemize}
 
 \secpieges
@@ -66,6 +78,7 @@ serait hors sujet.
         et logarithmique si on parle de $NL$
     \item Si on parle de $NL$, bien formaliser le type de machines 
         considérées
+    \item Subtilités avec les classes complémentaires, problèmes à promesses
 \end{itemize}
 
 
@@ -77,6 +90,7 @@ serait hors sujet.
         plutôt qu'un autre ($\lambda$-calcul, fonctions récursives) ?
     \item Citer une classe qui n'est pas $P$, $NP$ ou $PSPACE$
     \item Montrer que tel problème $X$ est $C$-complet.
+    \item Comment varie la complexité en fonction de la taille de l'alphabet
 \end{itemize}
 
 \secreferences
@@ -94,6 +108,7 @@ serait hors sujet.
     \item \temporary{NP-complétude d'un problème}
     \item \temporary{2SAT est $NL$-complet et en temps linéaire sur une 
         machine RAM}
+    \item \temporary{Universalité d'un langage rationnel est PSPACE complet}
 \end{itemize}
 
 
