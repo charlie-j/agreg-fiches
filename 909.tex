@@ -8,7 +8,7 @@
 
 \secrapports
 
-\begin{rapport}{2017}
+\begin{rapport}{2018}
 Pour cette leçon très classique, il importe de ne pas oublier de donner exemples et applications, ainsi
 que le demande l’intitulé.
 Une approche algorithmique doit être privilégiée dans la présentation des résultats classiques (déterminisation, théorème de
@@ -22,11 +22,16 @@ le cadre de cette leçon.
 \begin{itemize}
 \item  Définitions des automates finis et de la notion de langages reconnaissables. Exemples de languages reconnaissables.
 \item Existence de langages non reconnaissables. Pumping Lemma. Exemples
-\item Accessibilité, Complétude, déterminisation, minimisation.
-\item Propriétés de clôture des langages reconnaissables. 
+\item Applications, par exemple~: la compilation, la recherche de motif, le
+    model checking (et autres).
+\item Accessibilité, Complétude, déterminisation, minimisation (Nerode).
+\item Propriétés de clôture des langages reconnaissables, et construction
+    effective sur les automates.
+\item Ne pas oublier les complexités des algorithmes.
 \item Définitions des expressions rationnelles et langages rationnels.
 \item Théorème de Kleene, connaître/mentionner les constructions pour la preuve (parmis Thompson, Glushkov, Antimirov, McNaughton-Yamada, Brozoswky).
 \end{itemize}
+
 
 \secpieges
 
@@ -35,14 +40,18 @@ le cadre de cette leçon.
 \item Cette leçon est basique et fondamentale, il faut très bien couvrir toutes les bases, et éviter de partir trop loin théoriquement.
 \end{itemize}
 
-
 \secidees
 % to complete
 \begin{itemize}
-\item Analyse lexical et chaîne de compilation.
+\item Analyse lexicale et chaîne de compilation.
 \item Des questions de complexités
-\item Divers algorithmes de minisation.
+\item Divers algorithmes de minisation (Hopcroft, Brozoswky)
+\item Reconnaissance par monoïdes.
+\item Lien avec les autres modèles de calcul (Boustrophédon, Machine de turing
+    qui n'écrivent pas sur leur entrée).
+\item Lien avec la logique (MSO)
 \end{itemize}
+
 
 
 \secquestionsclassiques
@@ -51,11 +60,15 @@ le cadre de cette leçon.
 \item Dur : Tester l'universalité d'une expression rationnel ?
 \item Automate dont le determinisé est en $2^{|Q|}$ ?
 \item Quelle classe de complexité est reconnu par les automates ?
+\item Comment prouver la minimalité d'un automate ?
+\item Prouver que tel langage $X$ n'est pas régulier.
 \end{itemize}
 
 \secreferences
 \begin{itemize}
 \item \input{refs/carton}
+\item \temporary{Beauquier}
+\item \temporary{Sakarovitch}
 \end{itemize}
 
 \secdev
@@ -64,6 +77,9 @@ le cadre de cette leçon.
 \item \input{dev/kleene}
 \item \input{dev/presburger}
 \item \input{dev/autom_occur}
+\item \temporary{Aho Corasick (Crochemore)}
+\item \temporary{Boustrophédon Carton}
+\item \temporary{Nerode}
 
 \end{itemize}
 

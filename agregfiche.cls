@@ -15,10 +15,10 @@
 
 %% Définition des commandes
 
-\newcommand{\secindispensables}{\section{Les indispensables}}
+\newcommand{\secindispensables}{\section{Les indispensables du plan}}
 \newcommand{\secrapports}{\section{Extraits du Rapport}}
-\newcommand{\secpieges}{\section{Les pièges classiques}}
-\newcommand{\secidees}{\section{Idées}}
+\newcommand{\secpieges}{\section{Conseils au candidat}}
+\newcommand{\secidees}{\section{Suggestions d'ouvertures}}
 \newcommand{\secreferences}{\section{Références}}
 \newcommand{\secdev}{\section{Dev}}
 \newcommand{\secquestionsclassiques}{\section{Questions classiques}}
