@@ -1,0 +1,70 @@
+documentclass{agregfiche}
+
+\title{Leçon 929 -- Lambda-calcul pur comme modèle de calcul. Exemples.}
+
+\begin{document}
+
+\maketitle
+
+\secrapports
+
+\begin{rapport}{2018}
+
+Il s'agit de présenter un modèle de calcul : le lambda-calcul pur.
+Il est important de faire le lien avec au moins un autre modèle de calcul, par exemple les machines de Turing ou les fonctions récursives.
+Néanmoins, la leçon doit traiter des spécificités du lambda-calcul.
+Ainsi, le candidat doit motiver l'intérêt du lambda-calcul pur sur les entiers et pourra aborder la façon dont il permet de définir et d'utiliser des types de données (booléens, couples, listes, arbres).
+
+\end{rapport}
+
+\secindispensables
+
+\begin{itemize}
+    \item Définitions : lambda-termes, alpha-équivalence, substitution.
+    \item $\beta$-redex, $\beta$-réduction, confluence.
+    \item Représentation des données : entiers, booléens.
+    \item Fonctions représentables, fortement représentables.
+    \item Exemples : fonctions arithmétiques, conditionnelle.
+    \item Expressivité : équivalence avec les fonctions primitives.
+\end{itemize}
+
+\secpieges
+
+\begin{itemize}
+    \item Ne pas sortir du cadre "modèle de calcul".
+\end{itemize}
+
+\secidees
+
+\begin{itemize}
+    \item Types de données : couples, tuples, listes, arbres, et leurs primitives.
+    \item Développements finis.
+\end{itemize}
+
+\secquestionsclassiques
+
+\begin{itemize}
+    \item Donner quelques applications non-triviales du tri ?
+    \item Pourquoi veut-on un tri stable ? Un tri en place ? Un tri en ligne ?
+    \item Coût des les opérations élémentaires sur les listes et les tableaux ?
+    \item Comment améliorer le tri rapide pour qu'il soit optimal dans tous les cas ?
+\end{itemize}
+
+\secreferences
+
+\begin{itemize}
+    \item \input{Krivine}
+    \item \temporary{Barendregt}
+\end{itemize}
+
+
+\secdev
+
+\begin{itemize}
+    \item \temporary{Equivalence entre fonctions récursives et fonctions représentables}
+    \item \temporary{Le minimisation est fortement représentable}
+    \item \temporary{Confluence du lambda-calcul}
+\end{itemize}
+
+
+\end{document}
