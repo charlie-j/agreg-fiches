@@ -36,23 +36,40 @@ Plusieurs développements peuvent être communs avec une des leçons 914, 915, m
 \begin{itemize}
     \item Cf rapport, avoir une leçon trop inspirée des leçons 914, 915.
     \item Chaque livre a une définition des machines de Turing : il faut rester cohérent, et faire attention aux résultats utilisés.
+    \item Bien justifier le formalisme introduit et son utilité en comparaison
+        aux autres modèles
+    \item Bien faire la différence entre la reconnaissabilité et la
+        calculabilité, ainsi que le lien entre les deux.
 \end{itemize}
 
 \secidees
 
 \begin{itemize}
-    \item Variantes des machines de Turing : plusieurs rubans, alphabet ou nombre d'états restreints.
+    \item Stabilité des notions pour les variantes des machines de Turing : non
+        déterminisme (existentiel, universel, alternant), 
+        plusieurs rubans, alphabet ou nombre d'états restreints.
     \item Ouvertures relevant des leçons 914 et 915.
     \item Définition des classes de complexité, réductions polynomiales et logarithmiques.
+    \item Limites de la stabilité (machines n'écrivant pas sur leur entrée,
+        calculant en temps $o(\log \log n)$)
+    \item Lien avec des notions plus faibles de calcul (automates, grammaires
+        algébriques)
+    \item Lien avec les machines de Minsky
+    \item Faire le lien entre les variantes de transition (non-déterminisme,
+        probabilités) et l'ajout d'une bande d'advice
 \end{itemize}
 
 \secquestionsclassiques
 
 \begin{itemize}
-    \item Donner quelques applications non-triviales du tri ?
-    \item Pourquoi veut-on un tri stable ? Un tri en place ? Un tri en ligne ?
-    \item Coût des les opérations élémentaires sur les listes et les tableaux ?
-    \item Comment améliorer le tri rapide pour qu'il soit optimal dans tous les cas ?
+    \item Quel sens donner au \emph{calcul} d'une machine de Turing non
+        déterminite ?
+    \item Dans quel sens une machine de Turing est-elle proche d'un ordinateur
+        classique ?
+    \item En quoi les classes de complexités sont liées à l'efficacité des
+        algorithmes ?
+    \item Pourquoi étudier principalement la décidabilité plutôt que la
+        calculabilité ?
 \end{itemize}
 
 \secreferences
