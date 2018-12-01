@@ -23,15 +23,19 @@ Ainsi, le candidat doit motiver l'intérêt du lambda-calcul pur sur les entiers
     \item Définitions : lambda-termes, alpha-équivalence, substitution.
     \item $\beta$-redex, $\beta$-réduction, confluence.
     \item Représentation des données : entiers, booléens.
-    \item Fonctions représentables, fortement représentables.
+    \item Fonctions représentables.
     \item Exemples : fonctions arithmétiques, conditionnelle.
+    \item Exemples : fonctions récursives avec combinateur de point fixe.
     \item Expressivité : équivalence avec les fonctions primitives.
+    \item Stratégies d'évaluation (gauche, tête)
 \end{itemize}
 
 \secpieges
 
 \begin{itemize}
     \item Ne pas sortir du cadre "modèle de calcul".
+    \item Surtout ne pas parler de système de type
+    \item Bien doser le temps passé sur la substution et l'alpha équivalence
 \end{itemize}
 
 \secidees
@@ -39,15 +43,27 @@ Ainsi, le candidat doit motiver l'intérêt du lambda-calcul pur sur les entiers
 \begin{itemize}
     \item Types de données : couples, tuples, listes, arbres, et leurs primitives.
     \item Développements finis.
+    \item Fonctions fortement représentables.
+    \item Lien avec les langages fonctionnels (appel par valeur, nom, need)
+    \item Systèmes numériques (nombres de Gödel, Parigot, Church) et conversions
+    \item Indécidabilité sur les $\lambda$-termes (cf Krivine/Barendregt)
 \end{itemize}
 
 \secquestionsclassiques
 
 \begin{itemize}
-    \item Donner quelques applications non-triviales du tri ?
-    \item Pourquoi veut-on un tri stable ? Un tri en place ? Un tri en ligne ?
-    \item Coût des les opérations élémentaires sur les listes et les tableaux ?
-    \item Comment améliorer le tri rapide pour qu'il soit optimal dans tous les cas ?
+    \item Quel est l'intérêt du $\lambda$-calcul ?
+    \item Donner un contre exemple à la forte confluence.
+    \item Citer un combinateur de point fixe.
+    \item Le combinateur de point fixe donné 
+        fonctionne-t-il correctement en appel 
+        par valeur ?
+    \item Écrire la factorielle en $\lambda$-calcul 
+        dans le système numérique de votre choix.
+    \item Calculer la forme normale d'un terme donné.
+    \item Quel est l'intérêt de la représentation forte (par rapport à la faible)
+    \item Est-ce qu'un terme est $\beta$-équivalent à une unique forme de tête ?
+    \item Connaissez vous l'$\eta$-expansion ? À quoi peut-elle servir ?
 \end{itemize}
 
 \secreferences

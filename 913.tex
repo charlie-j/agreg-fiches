@@ -23,8 +23,9 @@ Plusieurs développements peuvent être communs avec une des leçons 914, 915, m
     \item Définitions des machines de Turing déterministes, non déterministes.
     \item Reconnaissabilité (mot, langage).
     \item Machine de Turing universelle.
-    \item Décidabilité : définition d'un problème décidable, indécidable, réductions.
-    \item Indécidabilité de l'arrêt.
+    \item Décidabilité : définition d'un problème décidable, indécidable.
+    \item Langages récursifs, récursivement énumérables
+    \item Indécidabilité de l'arrêt et réductions.
     \item Calculabilité : définition d'une fonction calculable.
     \item Exemples de fonctions calculables : fonctions arithmétiques.
     \item Expressivité : équivalence avec les fonctions récursives, le lambda-calcul.
@@ -34,12 +35,14 @@ Plusieurs développements peuvent être communs avec une des leçons 914, 915, m
 \secpieges
 
 \begin{itemize}
-    \item Cf rapport, avoir une leçon trop inspirée des leçons 914, 915.
+    \item Cf rapport, ne pas avoir une leçon trop inspirée des leçons 914, 915.
     \item Chaque livre a une définition des machines de Turing : il faut rester cohérent, et faire attention aux résultats utilisés.
     \item Bien justifier le formalisme introduit et son utilité en comparaison
         aux autres modèles
     \item Bien faire la différence entre la reconnaissabilité et la
         calculabilité, ainsi que le lien entre les deux.
+    \item Bien faire attention à la reconnaissabilité pour les machines 
+        non déterministes.
 \end{itemize}
 
 \secidees
@@ -49,8 +52,8 @@ Plusieurs développements peuvent être communs avec une des leçons 914, 915, m
         déterminisme (existentiel, universel, alternant), 
         plusieurs rubans, alphabet ou nombre d'états restreints.
     \item Ouvertures relevant des leçons 914 et 915.
-    \item Définition des classes de complexité, réductions polynomiales et logarithmiques.
-    \item Limites de la stabilité (machines n'écrivant pas sur leur entrée,
+    \item Limites de la stabilité (machines en espace linéaire/constant, 
+        machines n'écrivant pas sur leur entrée,
         calculant en temps $o(\log \log n)$)
     \item Lien avec des notions plus faibles de calcul (automates, grammaires
         algébriques)
@@ -62,8 +65,9 @@ Plusieurs développements peuvent être communs avec une des leçons 914, 915, m
 \secquestionsclassiques
 
 \begin{itemize}
+    \item Quel est l'intérêt des machines de Turing ?
     \item Quel sens donner au \emph{calcul} d'une machine de Turing non
-        déterminite ?
+        déterministe ?
     \item Dans quel sens une machine de Turing est-elle proche d'un ordinateur
         classique ?
     \item En quoi les classes de complexités sont liées à l'efficacité des
@@ -86,9 +90,9 @@ Plusieurs développements peuvent être communs avec une des leçons 914, 915, m
 \secdev
 
 \begin{itemize}
-    \item \temporary{Equivalence entre fonctions calculables et récursives}
+    \item \temporary{Équivalence entre fonctions calculables et récursives}
     \item \temporary{Indécidabilité de l'arrêt et applications à quelques problèmes indécidables}
-    \item \temporary{Equivalence entre deux variantes des machines de Turing}
+    \item \temporary{Équivalence entre deux variantes des machines de Turing}
     \item \temporary{Théorème de Cook}
     \item \temporary{Théorème de Savitch}
 \end{itemize}
