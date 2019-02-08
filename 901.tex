@@ -1,0 +1,89 @@
+
+\documentclass{agregfiche}
+
+\title{Leçon 901 - Structures de données. Exemples et applications.}
+
+\begin{document}
+\maketitle
+
+\secrapports
+\begin{rapport}{2018}
+	Le mot algorithme ne figure pas dans l’intitulé de cette leçon, même si l’utilisation des structures de
+	données est évidemment fortement liée à des questions algorithmiques. La leçon doit donc être orientée
+	plutôt sur la question du choix d’une structure de données. Le jury attend du candidat qu’il présente
+	différents types abstraits de structures de données en donnant quelques exemples de leur usage avant de
+	s’intéresser au choix de la structure concrète. Le candidat ne peut se limiter à des structures linéaires
+	simples comme des tableaux ou des listes, mais doit présenter également quelques structures plus
+	complexes, reposant par exemple sur des implantations à l’aide d’arbres. Les notions de complexité des
+	opérations usuelles sur la structure de données sont bien sûr essentielles dans cette leçon.
+\end{rapport}
+
+\secindispensables
+
+\begin{itemize}
+	\item  Types abstraits, cas linéaire et non linéaire
+	\item Interface abstraite et implan-
+	tation concrète.
+	\item Complexité des opérations usuelles
+\end{itemize}
+
+\secasavoir
+
+\begin{itemize}
+	\item  Tableaux, listes, piles, files, , file de priorité, arbres, graphes (orientés et non orientés ensembles, dictionnaires
+	\item Notion de cout amorti.
+	\item Pour un même type de donnée (e.g un graphe), exemples de choix de représentation optimisé selon l'ensemble de données possibles (e.g graphe sparse ou dense)
+	\item Influence de la structure de données sur un algorithme.
+	\item Notion de types persistant et mutable.
+	
+\end{itemize}
+
+\secidees
+
+\begin{itemize}
+	\item Représentation des entiers et float en machine.
+	\item Structure avancé : Arbre rouge-noir , tas de Fibonnacci, Union-Find
+	\item Structures paresseuses
+\end{itemize}
+
+\secpieges
+
+\begin{itemize}
+	\item Les algorithmes ne doivent pas être le coeur de la leçon, mais bien les structure de données.
+	\item Les dessins sont souvent très appropriés pour représenter des structures de données et leurs évolutions.
+	\item Bien avoir en tête les abstractions. Par exemple, un dictionnaire ne porte pas nécéssairement sur des strings.
+	\item Attention à ne pas s'éparpiller avec trop de structures différentes. Il n'est pas forcément nécéssaire d'écrire tous les interfaces des types abstraits.
+	\item La complexité, c'est bien, la comparaison des complexités, c'est mieux.
+	\item Ne pas être trop lié à un langage de programmation.
+	\item Les structures avancés introduites doivent être accompagné d'une application.
+\end{itemize}
+
+\secquestionsclassiques
+
+\begin{itemize}
+	\item Pourquoi avoir une approche par type abstraits ?
+	\item Quels structure de donnés sont en pratique les plus utilisés, et intégrés nativement dans les languages de programmations ?
+	\item Connaissez vous l'implémentation des [insérerer ici une structure] en pratique utilisé ?
+	\item Avec les listes chainé/doublement chainé, quelles opérations sont plus ou moins complexe ?
+	\item Le choix du type, par exemple persistent et mutable, est souvent lié à des soucis d'efficacité. Y-a-t'il d'autre préoccupations lors de la programmation influencées par ce choix ?
+\end{itemize}
+
+\secreferences
+
+\begin{itemize}
+\item \input{refs/cormen}
+\item \input{refs/beauquier}
+\item \temporary{froideveaux}
+\end{itemize}
+
+\secdev
+
+\begin{itemize}
+\item \input{dev/tri_tas}
+\item \temporary{dijkstra}
+\item \temporary{hachage parfait}
+\item \temporary{ABR optimaux}
+\end{itemize}
+
+
+\end{document}
