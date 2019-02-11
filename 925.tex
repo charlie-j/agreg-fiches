@@ -8,7 +8,7 @@
 
 \secrapports
 
-\begin{rapport}{2017}
+\begin{rapport}{2018}
 
 Cette leçon offre une grande liberté de choix au candidat, qui peut décider de présenter des algorithmes sur des problèmes variés : connexité, diamètre, arbre couvrant, flot maximal, plus court chemin, cycle eulérien, etc. mais aussi des problèmes plus difficiles, comme la couverture de sommets ou la recherche d’un cycle hamiltonien, pour lesquels il pourra proposer des algorithmes d’approximation ou des heuristiques usuelles. Une preuve de correction des algorithmes proposés sera évidemment appréciée. Il est attendu que diverses représentations des graphes soient présentées et comparées, en particulier en termes de complexité.
 
@@ -17,8 +17,7 @@ Cette leçon offre une grande liberté de choix au candidat, qui peut décider d
 \secindispensables
 
 \begin{itemize}
-    \item Les représentations des graphes et leurs complexités
-        (bien insister dessus à chaque algorithme)
+    \item Représentations des graphes, complexités des opérations élémentaires.
     \item Dijkstra
 
 \end{itemize}
@@ -39,33 +38,37 @@ Cette leçon offre une grande liberté de choix au candidat, qui peut décider d
 \secpieges
 
 \begin{itemize}
-    \item Ne pas essayer de faire un plan trop original. Cette leçon est une
-        liste d'algorithmes !
-    \item Donner des applications aux algorithmes (approximations de problèmes
-        NP, etc ...)
-    \item Ne pas faire une partie "problèmes NP", ou plus généralement 
-        sur la théorie des graphes
+    \item Ne pas essayer de faire un plan trop original. Cette leçon est une liste d'algorithmes !
+    \item Donner des applications aux algorithmes (approximations de problèmes NP, etc ...)
+    \item Ne pas faire une partie "problèmes NP", ou plus généralement sur la théorie des graphes
+    \item Faire des dessins.
+    \item Avoir écrit des algos dans le plan peux permettre d'éviter des les réécrire pendant un développement.
+    \item Ne pas se restreindre aux graphes orientés.
 \end{itemize}
 
 \secquestionsclassiques
 
 \begin{itemize}
-    \item TODO
+    \item Exemple d'application de la détection de cycle, de flots, de ... ?
+    \item Pourquoi les graphes sont-ils si important ?
+    \item Dérouler tel algorithme sur tel exemple.
+    \item Qu'est-ce qui peut influencer le choix entre les différents algorithme de plus court chemins.
+    \item Est-ce que le choix de la représentation influe fortement sur la complexité en espace des algorithmes ?
 \end{itemize}
 
 \secreferences
 
 \begin{itemize}
-    \item Cormen
-    \item Beauquier
-    \item Dalpagusta
+    \item \input{refs/cormen}
+    \item \input{refs/beauquier}
+%    \item Dalpagusta 
 \end{itemize}
 
 \secdev
 
 \begin{itemize}
-    \item Correction totale et complexité de Dijkstra (Cormen / Beauquier)
-    \item 2SAT est NL-complet et se résout en temps polynomial (Carton)
+	\item \input{dev/dijkstra}
+	\item \input{dev/primkruskal}
 \end{itemize}
 
 \end{document}
