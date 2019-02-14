@@ -8,7 +8,7 @@
 
 \secrapports
 
-\begin{rapport}{2017}
+\begin{rapport}{2018}
 
 Le jury attend que le candidat aborde à la fois la complexité en temps et en
 espace. Il faut naturellement exhiber des exemples de problèmes appartenant aux
@@ -24,16 +24,16 @@ serait hors sujet.
 \secindispensables
 
 \begin{itemize}
-    \item La notion de complexité en espace et en temps
-        avec les inclusions évidentes entre elles
-    \item Le problème "classiquement complet"
-        \begin{equation}
-            L = \left\{ (M, x, 1^t) ~|~ \langle M, x \rangle \text{ termine en
-                temps (resp. espace) }\leq t
-            \right\}
-        \end{equation}
-    \item Les classes usuelles ($\P$, $\NP$, $\PSPACE$)
+    \item Complexité en espace et en temps.
+    \item Les classes usuelles ($\P$, $\NP$, $\PSPACE$) et inclusions.
     \item Notion de réduction, de problème complet
+    
+%    \item Le problème "classiquement complet"
+%        \begin{equation}
+%            L = \left\{ (M, x, 1^t) ~|~ \langle M, x \rangle \text{ termine en
+%                temps (resp. espace) }\leq t
+%            \right\}
+%        \end{equation}
 
 \end{itemize}
 
@@ -49,43 +49,37 @@ serait hors sujet.
 	domaines différents (graphes, automates,
 	grammaires, logique, circuits)
 	\item Les théorèmes de hiérarchie stricte
-	\item Un petit diagramme qui permet de s'y retrouver 
-	en annexe avec les inclusions strictes et les égalités
 \end{itemize}
 
 
 \secidees
 
 \begin{itemize}
-    \item Les théorèmes de simulation pour les machines 
-        universelles avec des bornes fines de complexité
-    \item Les classes alternantes, le lien avec 
-        EXPSACE et la hiérarchie polynômiale (Carton)
     \item Les classes $NL$, $co-NL$ et Immerman-Szelepcsényi
+    \item Développer le côté logique (2SAT, HORNSAT, SAT, QBF, CTLSAT).
+    \item Des théorèmes de borne inférieure de simulation
+(une bande vs deux bandes en $O(n)$ vs $O(n^2)$ 
+pour le langage des palindromes).
     \item Algorithmes randomisés comme autre modèle de calcul
         (tests de primalité, algorithme de Berlekamp,
         polynomial identity testing, RP, coRP)
-    \item Des théorèmes de borne inférieure de simulation
-        (une bande vs deux bandes en $O(n)$ vs $O(n^2)$ 
-        pour le langage des palindromes).
+    \item Les classes alternantes, le lien avec 
+        EXPSACE et la hiérarchie polynômiale (Carton)   
     \item Une machine qui calcule trop rapidement est un automate 
         (Carton)
-    \item Développer le côté logique (2SAT, HORNSAT, SAT, QBF, CTLSAT).
-    \item Les arguments de padding peuvent faire de jolis résultats 
-        ($NSPACE = SPACE$ via Savitch, si $P = NP$ alors $EXP = NEXP$)
-    \item S'il existe un problème $NP$-complet sur un langage unaire,
-        alors $P = NP$.
 \end{itemize}
 
 \secpieges
 
 \begin{itemize}
     \item Ne pas centrer toute la leçon sur $P$ et $NP$
-    \item Bien expliquer la notion de réduciton polynômiale,
-        et logarithmique si on parle de $NL$
+  	\item Un petit diagramme qui permet de s'y retrouver 
+    en annexe avec les inclusions strictes et les égalités est le bienvenue.
     \item Si on parle de $NL$, bien formaliser le type de machines 
-        considérées
-    \item Subtilités avec les classes complémentaires, problèmes à promesses
+        considérées,  et bien expliquer la notion de réduction polynômiale,
+        et logarithmique si on parle de $NL$
+    \item Les différentes ouvertures hors programme peuvent être très dangereuse, le domaine de la complexité est plein de pièges et de suptilité.
+
 \end{itemize}
 
 
@@ -95,27 +89,25 @@ serait hors sujet.
     \item Quels sont les impacts de la variation du modèle sur la complexité ?
     \item Pourquoi utiliser le formalisme des machines de Turing 
         plutôt qu'un autre ($\lambda$-calcul, fonctions récursives) ?
-    \item Citer une classe qui n'est pas $P$, $NP$ ou $PSPACE$
+    \item Citer une classe qui n'est pas $P$, $NP$ ou $PSPACE$.
     \item Montrer que tel problème $X$ est $C$-complet.
-    \item Comment varie la complexité en fonction de la taille de l'alphabet
+    \item Comment varie la complexité en fonction de la taille de l'alphabet ?
 \end{itemize}
 
 \secreferences
 
 \begin{itemize}
-\item \temporary{Carton}
-\item \temporary{Arora Barak}
+\item \input{refs/carton}
+\item \input{refs/arorabarak}
 \end{itemize}
 
 \secdev
 
 \begin{itemize}
-    \item \temporary{Hiérarchie en temps et en espace}
-    \item \temporary{Immerman Szelepcseniy}
-    \item \temporary{NP-complétude d'un problème}
-    \item \temporary{2SAT est $NL$-complet et en temps linéaire sur une 
-        machine RAM}
-    \item \temporary{Universalité d'un langage rationnel est PSPACE complet}
+    \item \input{dev/cook}
+%    \item \temporary{Hiérarchie en temps et en espace}
+%    \item \temporary{Immerman Szelepcseniy}
+%    \item \temporary{Universalité d'un langage rationnel est PSPACE complet}
 \end{itemize}
 
 
