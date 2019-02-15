@@ -27,6 +27,7 @@ serait hors sujet.
     \item Complexité en espace et en temps.
     \item Les classes usuelles ($\P$, $\NP$, $\PSPACE$) et inclusions.
     \item Notion de réduction, de problème complet
+    \item SAT et le théorème de Cook
     
 %    \item Le problème "classiquement complet"
 %        \begin{equation}
@@ -40,45 +41,48 @@ serait hors sujet.
 \secasavoir
 
 \begin{itemize}
-
-	\item La robustesse vis-à-vis du modèle de calcul 
-	(déterministe, non-déterministe, une bande, plusieurs 
+	\item Exemples de problèmes complets sur des 
+domaines différents (graphes, automates,
+grammaires, logique, circuits)
+    \item Exemples de réductions.
+	\item La robustesse vis-à-vis du modèle de calcul (une bande, plusieurs 
 	bandes, écriture sur entrée)
 	\item Savitch et les classes en espace
-	\item Exemples de problèmes complets sur des 
-	domaines différents (graphes, automates,
-	grammaires, logique, circuits)
-	\item Les théorèmes de hiérarchie stricte
+    \item Modèle des machines RAM
+    \item Les théorèmes de hiérarchie stricte (attention, la preuve concernant l'espace est très difficile, dangereux en développements)
 \end{itemize}
 
 
 \secidees
 
 \begin{itemize}
-    \item Les classes $NL$, $co-NL$ et Immerman-Szelepcsényi
-    \item Développer le côté logique (2SAT, HORNSAT, SAT, QBF, CTLSAT).
     \item Des théorèmes de borne inférieure de simulation
 (une bande vs deux bandes en $O(n)$ vs $O(n^2)$ 
 pour le langage des palindromes).
-    \item Algorithmes randomisés comme autre modèle de calcul
-        (tests de primalité, algorithme de Berlekamp,
-        polynomial identity testing, RP, coRP)
+    \item Les classes $\NL$, $\coNL$ et Immerman-Szelepcsényi
+    \item Développer le côté logique (2SAT, HORNSAT, SAT, QBF, CTLSAT).
     \item Les classes alternantes, le lien avec 
-        EXPSACE et la hiérarchie polynômiale (Carton)   
+        $\PSPACE$ et $\EXP$ et la hiérarchie polynomiale [Car]
     \item Une machine qui calcule trop rapidement est un automate 
-        (Carton)
+        [Car]
+    \item (vraiment loin du programme) Classes randomisés (tests de primalité, algorithme de Berlekamp,
+        polynomial identity testing, RP, coRP)
+     
 \end{itemize}
 
 \secpieges
 
 \begin{itemize}
-    \item Ne pas centrer toute la leçon sur $P$ et $NP$
+    \item Attention à la représentation des données.
+    \item Mettre des exemples, et des exemples.
+    \item Ne pas centrer toute la leçon sur $\P$ et $\NP$, mais ne pas les oublier.
   	\item Un petit diagramme qui permet de s'y retrouver 
-    en annexe avec les inclusions strictes et les égalités est le bienvenue.
-    \item Si on parle de $NL$, bien formaliser le type de machines 
-        considérées,  et bien expliquer la notion de réduction polynômiale,
-        et logarithmique si on parle de $NL$
-    \item Les différentes ouvertures hors programme peuvent être très dangereuse, le domaine de la complexité est plein de pièges et de suptilité.
+    en annexe avec les inclusions strictes et les égalités est le bienvenu.
+    \item Si on parle de $\NL$, bien formaliser le type de machines 
+        considérées,  et bien expliquer la notion de réduction polynomiale,
+        et logarithmique si on parle de $\NL$
+    \item Les différentes ouvertures hors programme peuvent être très dangereuses, le domaine de la complexité est plein de pièges et de subtilités.
+    
 
 \end{itemize}
 
@@ -86,27 +90,34 @@ pour le langage des palindromes).
 \secquestionsclassiques
 
 \begin{itemize}
+    \item En pratique, que signifie $NP$-complet ? Quelle est l'intérêt de la théorie de la complexité ?
     \item Quels sont les impacts de la variation du modèle sur la complexité ?
     \item Pourquoi utiliser le formalisme des machines de Turing 
-        plutôt qu'un autre ($\lambda$-calcul, fonctions récursives) ?
+        plutôt qu'un autre (RAM, $\lambda$-calcul, fonctions récursives) ?
     \item Citer une classe qui n'est pas $P$, $NP$ ou $PSPACE$.
     \item Montrer que tel problème $X$ est $C$-complet.
     \item Comment varie la complexité en fonction de la taille de l'alphabet ?
+    \item Discussions sur les variantes de SAT.
 \end{itemize}
 
 \secreferences
 
 \begin{itemize}
+    \item \input{refs/perifel}
 \item \input{refs/carton}
+\textit{La $NP$-complétude de HamPATH est fausse dedans.}
 \item \input{refs/arorabarak}
+\item Éviter le Papadimitriou, qui contient de très nombreuses fausses preuves.
 \end{itemize}
 
 \secdev
 
 \begin{itemize}
     \item \input{dev/cook}
+    \item Preuve de complétude d'un problème au choix.
+    \item \input{dev/immerman}
+%    \item \temporary{Équivalence entre 2 bandes et k bandes}
 %    \item \temporary{Hiérarchie en temps et en espace}
-%    \item \temporary{Immerman Szelepcseniy}
 %    \item \temporary{Universalité d'un langage rationnel est PSPACE complet}
 \end{itemize}
 
