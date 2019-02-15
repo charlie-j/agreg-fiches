@@ -16,7 +16,7 @@
 
 %% Définition des commandes
 
-\newcommand{\secindispensables}{\section{Coeur de la leçon}}
+\newcommand{\secindispensables}{\section{C\oe ur de la leçon}}
 \newcommand{\secasavoir}{\section{À savoir}}
 \newcommand{\secrapports}{\section{Extraits du Rapport}}
 \newcommand{\secpieges}{\section{Conseils au candidat}}
