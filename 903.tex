@@ -24,15 +24,16 @@
 \secindispensables
 
 \begin{itemize}
-    \item Représentation des données: listes, tableaux. Bien définir les opérations élémentaires autorisées.
-    \item Propriétés des tris: stable, en place, en ligne
-    \item Algorithmes naïfs: insertion, sélection
+    \item Représentation des données: listes, tableaux. 
+    \item Propriétés des tris: stable, en place, en ligne.
+    \item Algorithmes naïfs: insertion, sélection.
+   \item Tri rapide, tri fusion.
 \end{itemize}
 
 \secasavoir
 \begin{itemize}
     \item Borne inférieure sur les tris par comparaison.
-    \item Tri asymptotiquement optimaux: diviser-pour-régner (tri fusion) à base de structures de données (tri par tas)
+    \item Tri asymptotiquement optimaux: diviser-pour-régner (tri fusion), à base de structures de données (tri par tas).
 	\item Analyses de complexité (meilleur, pire, moyenne, probabiliste) et preuves de correction.
 	\item Tri linéaires (comptage, base).
 \end{itemize}
@@ -40,18 +41,20 @@
 \secidees
 
 \begin{itemize}
-    \item Tri rapide avec médian
-    \item Tri par ABR
-    \item Tim Sort
-    \item Pourquoi étudier les tris: intérêt pratique (utiles partout, et déjà codés dans des modules) mais surtout pédagogique (des algorithmes simples pour illustrer les notions de correction, de complexité, et les paradigmes algorithmiques).
-    \item Illustrer la complexité par des exemples, si les bornes sont atteintes ou pas.
-    \item Parler des réseaux de tri est possible (et pas trop dur), il y a un joli développement autour du tri bitonique (voir le Cormen ed 2).
+    \item Tri rapide avec médian.
+    \item Tri par ABR.
+    \item Tim Sort.
+    \item Réseaux de tri.
+    \item Forcer un tri à être stable.
+    \item Tris externe.
 \end{itemize}
 
 \secpieges
 
 \begin{itemize}
-    \item Cf rapport, il faut être rigoureux.
+    \item Il faut être \underline{rigoureux}. Bien définir les opérations élémentaires autorisées.
+    \item Pourquoi étudier les tris: intérêt pratique (utiles partout, et déjà codés dans des modules) mais surtout pédagogique (des algorithmes simples pour illustrer les notions de correction, de complexité, et les paradigmes algorithmiques).
+    \item Illustrer la complexité par des exemples.
     \item Les algorithmes (qui sont simples) doivent être connus par c\oe ur et sans hésitation.
     \item Analyses probabilistes du tri rapide: faire très attention aux probas.
         \emph{Attention au Cormen}
@@ -61,7 +64,7 @@
 \secquestionsclassiques
 
 \begin{itemize}
-    \item Définir un «~tri par comparaison~»~? Pourquoi certains sont linéaires
+    \item Définir un «~tri par comparaison~»~? Pourquoi certains tris sont linéaires
         alors qu'on possède une borne inférieure~?
     \item Savez vous quels tris sont utilisés par votre langage de programmation
         favori ?
@@ -70,7 +73,6 @@
     \item Quel tri utiliser en pratique en fonction de la taille des données ?
     \item Donner quelques applications non-triviales du tri ?
     \item Pourquoi veut-on un tri stable ? Un tri en place ? Un tri en ligne ?
-    \item Coût des les opérations élémentaires sur les listes et les tableaux ?
     \item Comment améliorer le tri rapide pour qu'il soit optimal dans tous les cas ?
 \end{itemize}
 
