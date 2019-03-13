@@ -17,18 +17,18 @@
 \secindispensables
 
 \begin{itemize}
-    \item Les algorithmes naïfs de recherche de motif et la complexité
+    \item Les algorithmes naïfs de recherche de motif et la complexité.
     \item Les algorithmes non naïfs de KMP et Boyer-Moore.
-    \item Recherche de motif par automate
+    \item Recherche de motif par automate.
 
 \end{itemize}
 
 \secasavoir
 \begin{itemize}
 
-	\item PLSC, distance d'édition
-	\item Fonctions bordures, notions élémentaires de l'algorithmique du texte (préfixe, suffixe, table des périodes)
-	\item Exemples de mots où les pire cas sont atteints
+	\item PLSC, distance d'édition (de Levenshtein).
+	\item Fonctions bordures, notions élémentaires de l'algorithmique du texte (préfixe, suffixe, table des périodes).
+	\item Exemples de mots où les pire cas sont atteints.
 \end{itemize}
 
 \secidees
@@ -53,23 +53,16 @@
 \begin{itemize}
     \item Bien préciser quels sont les problèmes qu'on cherche 
         à résoudre, les entrées, et les complexités des algorithmes.
-        Par exemple, faire la différence entre la recherche 
-        d'un motif, la recherche de $k$ motifs, la recherche 
-        d'une expression régulière 
 
-    \item Pour la complexité, ne pas oublier de 
-        considérer la taille de l'alphabet comme un paramètre !
+    \item La taille de l'alphabet est un paramètre de la complexité.
 
-    \item Il faut faire des dessins en algorithmique du texte, sans 
-        quoi on tombe dans des formulations peu claires (et souvent 
-        fausses) et des preuves incompréhensibles.
+    \item Les dessins, c'est bien.
 
-    \item Faire une simple liste d'algorithme de texte n'est pas 
-        une bonne idée, il faut les organiser de manière pédagogique.
-        Cela peut vouloir dire par "problème", par "méthode", ou 
-        bien par "complexité".
+    \item Organiser de manière pédagogique les algorithmes.
+        Cela peut vouloir dire par ``problème", par ``méthode", ou 
+        bien par ``complexité".
 
-    \item L'analyse lexicale et syntaxique par exemple doit être évitée, bien que techniquement
+    \item L'analyse lexicale et syntaxique doit être évitée, bien que techniquement
         relevant de l'algorithmique du texte.
 
 \end{itemize}
@@ -79,7 +72,7 @@
 \begin{itemize}
     \item Quel algorithme est utilisé par Grep ? Libre office ?
     \item Faire la table de bordure de tel motif.
-    \item Calculer l'automate des occurences et le faire tourner sur un exemple.
+    \item Calculer l'automate des occurrences et le faire tourner sur un exemple.
     \item Donner un exemple de pire des cas pour les différents algorithmes.
     \item Pourquoi est-ce que l'automate de Simon possède un nombre linéaire
         d'arc retours ?
@@ -88,17 +81,19 @@
 \secreferences
 
 \begin{itemize}
-\item \temporary{Crochemore}
-\item \temporary{Jewels of Stringology}
+    \item \input{refs/crochemore}
+\item \input{refs/stringology}
 \end{itemize}
 
 \secdev
 
 \begin{itemize}
-    \item \temporary{CYK}
-    \item \temporary{KMP}
-    \item \temporary{Aho-Corasick}
-    \item \temporary{Distance d'édition}
+    \item \input{dev/autom_occur}
+    \item \input{dev/plsc}
+%    \item \temporary{CYK}
+%    \item \temporary{KMP}
+%    \item \temporary{Aho-Corasick}
+%    \item \temporary{Distance d'édition}
 \end{itemize}
 
 
