@@ -3,6 +3,10 @@
 
 \title{Leçon 918 - Systèmes formels de preuve en logique du premier ordre. Exemples.}
 
+% V1 par Charlie Jacomme
+% Relu par Sylvain Schmitz
+
+
 \begin{document}
 \maketitle
 
@@ -31,55 +35,64 @@
 	\item Calcul des séquents, déduction naturelle.
 	\item Algorithme d'unification.
 	\item Preuves par résolution.
-	\item Automatisation des preuves
+	\item Automatisation des preuves.
 \end{itemize}
 
 \secidees
 
 \begin{itemize}
-	\item Élimination des coupures
+	\item Élimination des coupures.
 	\item Logique intuitionniste.
-	\item Compacité
-	\item Méthodes des tableaux
-	\item Théories équationelle et réécriture
-	\item Clause de Horn, résolution et Prolog
+	\item Compacité.
+	\item Méthodes des tableaux.
+	\item Théories équationelle et réécriture.
+	\item Clause de Horn, résolution et Prolog.
 \end{itemize}
 
 \secpieges
 
 \begin{itemize}
-	\item Éviter de mettre les règles du système principal en annexes. Des arbres de preuves peuvent y trouver leurs places
+    \item Il faut au moins deux systèmes différents. Trois, c'est trop.
+	\item Éviter de mettre les règles du système principal en annexes. Des arbres de preuves peuvent y trouver leur place.
 	\item Ne pas mettre tous les systèmes. Attention à bien justifier l'introduction des différents systèmes, on ne fait pas un catalogue.
+    \item Les formules sont des termes, pas des mots avec parenthèses (pourquoi pas la notation polonaise inverse tant qu'on y est !)
+    \item Ne pas proposer la correction en développement.
 	\item Cette leçon ne porte pas sur les théories.
     \item La théorie de l'égalité peut apparaître comme une théorie, mais il vaut mieux éviter de la mettre directement dans le système de preuve.
-    \item Attention aux notions de $\alpha$-renommage, dur à définir complètement correctement.
+    \item Attention à la notion d'$\alpha$-renommage, dur à définir complètement correctement.
 \end{itemize}
 
 \secquestionsclassiques
 
 \begin{itemize}
+    \item Telle règle pourrait-elle être écrite différemment/est-elle admissible ?
 	\item Discuter des difficultés de l'automatisation dans différents systèmes.
-	\item Démontrer tel formule dans tel système.
+	\item Démontrer telle formule dans tel système.
 	\item La logique du premier ordre est-elle décidable ?
 	\item Motivation derrière le développements des systèmes à la Hilbert ?
 	\item Connaissez vous des outils (programmes) permettant de travailler avec un système de preuve et faire des preuves formelles ?
+    \item Se méfier de la déduction naturelle, c'est difficile de l'utiliser sur des exemples.
 \end{itemize}
 
 \secreferences
 
 \begin{itemize}
-\item \input{refs/dowek}
 \item \input{refs/goubault}
+\item \input{refs/david}
+\item \input{refs/dowek}
+
+
 
 \end{itemize}
 
 \secdev
 
 \begin{itemize}
-\item \temporary{Théorème de Herbrand (Goubault)}
-\item \temporary{Algorithme naif d'unification (DAVID)}
-\item \temporary{élimination des coupures (dowek?)}
-\item \temporary{complétude de la résolution (Stern?)}
+\item Le théorème de \bsc{Herbrand } est hors-sujet, c'est de la sémantique.
+\item L'unification est vraiment border line.
+\item L'élimination des coupures est trop dur à faire passer dans le temps.
+\item \input{dev/comp}
+\item \input{dev/contraction}
 \end{itemize}
 
 

@@ -2,6 +2,11 @@
 
 \title{Leçon 909 -- Langages rationnels et automates finis.  Exemples et applications.}
 
+% V1 par Charlie Jacomme
+% Relu par Gaetean Doueneau, Aliaume Lopez, Emilie Grienberger, Charlie Jacomme
+% Relu par Sylvain Schmitz
+
+
 \begin{document}
 
 \maketitle
@@ -22,16 +27,16 @@ le cadre de cette leçon.
 \begin{itemize}
 \item  Définitions des automates finis et de la notion de langages reconnaissables. Exemples de languages reconnaissables.
 \item Définitions des expressions rationnelles et langages rationnels.
-\item Théorème de Kleene, connaître/mentionner les constructions pour la preuve (parmis Thompson, Glushkov, Antimirov, McNaughton-Yamada, Brozoswky).
+\item Théorème de \bsc{Kleene}, connaître/mentionner les constructions pour la preuve (parmis \bsc{Thompson}, \bsc{Glushkov}, \bsc{Antimirov}, \bsc{McNaughton-Yamada}, \bsc{Brzozoswky-McCluskey}).
 \end{itemize}
 
 \secasavoir
 
 \begin{itemize}
-	\item Existence de langages non reconnaissables. Pumping Lemma. Exemples
+	\item Existence de langages non reconnaissables. Lemme de pompage. Exemples
 	\item Applications, par exemple~: la compilation, la recherche de motif, le
 	model checking (et autres).
-	\item Accessibilité, Complétude, déterminisation, minimisation (Nerode).
+	\item Accessibilité, Complétude, déterminisation, minimisation (\bsc{Nerode}).
 	\item Propriétés de clôture des langages reconnaissables, et construction
 	effective sur les automates.
 	\item Ne pas oublier les complexités des algorithmes.
@@ -42,10 +47,11 @@ le cadre de cette leçon.
 % to complete
 \begin{itemize}
 	\item Analyse lexicale et chaîne de compilation.
-	\item Des questions de complexités
-	\item Divers algorithmes de minisation (Hopcroft, Brozoswky)
+	\item Des questions de complexité.
+    \item Lemme d'\bsc{Arden}
+	\item Divers algorithmes de minimisations (dur à faire en développement)
 	\item Reconnaissance par monoïdes.
-	\item Lien avec les autres modèles de calcul (Boustrophédon, Machine de turing
+	\item Lien avec les autres modèles de calcul (Boustrophédon, Machine de \bsc{Turing}
 	qui n'écrivent pas sur leur entrée).
 	\item Lien avec la logique (MSO)
 \end{itemize}
@@ -56,6 +62,8 @@ le cadre de cette leçon.
 \begin{itemize}
 \item Si l'analyse lexical et de la compilation peuvent être un exemple d'application, ils ne doivent pas prendre une place prépondérante. Les automates à piles ne sont notamment pas au programme. On ne rentrera pas dans de nombreuses définitions pour les grammaires.
 \item Cette leçon est basique et fondamentale, il faut très bien couvrir toutes les bases, et éviter de partir trop loin théoriquement.
+\item Réfléchir à la complexité.
+\item Éviter  \bsc{McNaughton-Yamada}, qui est infaisable sur un exemple.
 \end{itemize}
 
 
@@ -69,6 +77,8 @@ le cadre de cette leçon.
 \item Quelle classe de complexité est reconnu par les automates ?
 \item Comment prouver la minimalité d'un automate ?
 \item Prouver que tel langage $X$ n'est pas régulier.
+\item Coût d'élimination des $\epsilon$-transitions ?
+\item Avantages/inconvénients des constructions du théorème de  \bsc{Kleene} ?
 \end{itemize}
 
 \secreferences
@@ -84,9 +94,8 @@ le cadre de cette leçon.
 \item \input{dev/kleene}
 \item \input{dev/presburger}
 \item \input{dev/autom_occur}
-\item \temporary{Aho Corasick (Crochemore)}
-\item \temporary{Boustrophédon Carton}
-\item \temporary{Nerode}
+\item \input{dev/nerode}
+\item \input{dev/lemetoile}
 
 \end{itemize}
 

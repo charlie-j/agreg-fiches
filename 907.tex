@@ -2,6 +2,10 @@
 
 \title{Leçon 907 -- Algorithmique du texte. Exemples et applications.}
 
+% V1 par Aliaume Lopez
+% Relu par Gaetean Doueneau, Aliaume Lopez, Emilie Grienberger, Charlie Jacomme
+% Relu (rapidement) par Sylvain Schmitz
+
 \begin{document}
 
 \maketitle
@@ -18,7 +22,7 @@
 
 \begin{itemize}
     \item Les algorithmes naïfs de recherche de motif et la complexité.
-    \item Les algorithmes non naïfs de KMP et Boyer-Moore.
+    \item Les algorithmes non naïfs de KMP et \bsc{Boyer-Moore}.
     \item Recherche de motif par automate.
 
 \end{itemize}
@@ -26,7 +30,7 @@
 \secasavoir
 \begin{itemize}
 
-	\item PLSC, distance d'édition (de Levenshtein).
+	\item PLSC, distance d'édition (de \bsc{Levenshtein}).
 	\item Fonctions bordures, notions élémentaires de l'algorithmique du texte (préfixe, suffixe, table des périodes).
 	\item Exemples de mots où les pire cas sont atteints.
 \end{itemize}
@@ -34,18 +38,18 @@
 \secidees
 
 \begin{itemize}
-	\item L'algorithme de Karp-Rabin
-	\item Automate de Simon
+	\item L'algorithme de \bsc{Karp-Rabin}
+	\item Automate de \bsc{Simon}
 	\item Regarder KMP sous l'angle des structure de données 
-	ou de l'algorithme (automate de Simon)
+	ou de l'algorithme (automate de \bsc{Simon})
 	\item 
 	On peut aussi parler de compression de texte et codes 
 	correcteurs, mais bien attention à rester dans la leçon.
 	\item 
-	Parler des structures (automates, Aho-Corasick, Simon,
+	Parler des structures (automates, \bsc{Aho-Corasick}, \bsc{Simon},
 	Suffix Tree, Suffix Trie, Suffix Array, Prefix Trie).
 	
-	\item Recherche de motif approximative
+	\item Recherche approximative de motif approximative
 \end{itemize}
 
 \secpieges
@@ -70,12 +74,12 @@
 \secquestionsclassiques
 
 \begin{itemize}
-    \item Quel algorithme est utilisé par Grep ? Libre office ?
+    \item Quel algorithme est utilisé par Grep ?
     \item Faire la table de bordure de tel motif.
     \item Calculer l'automate des occurrences et le faire tourner sur un exemple.
     \item Donner un exemple de pire des cas pour les différents algorithmes.
     \item Pourquoi est-ce que l'automate de Simon possède un nombre linéaire
-        d'arc retours ?
+        d'arc retours ? Est-il minimal ?
 \end{itemize}
 
 \secreferences
@@ -83,6 +87,7 @@
 \begin{itemize}
     \item \input{refs/crochemore}
 \item \input{refs/stringology}
+\item \input{refs/handbook}
 \end{itemize}
 
 \secdev
