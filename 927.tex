@@ -1,0 +1,75 @@
+
+\documentclass{agregfiche}
+
+\title{Leçon 927 - Exemples de preuve d’algorithme :  correction, terminaison.}
+
+\begin{document}
+\maketitle
+
+\secrapports
+\begin{rapport}{2018}
+    Le jury attend du candidat qu’il traite des exemples d’algorithmes récursifs et des exemples d’algorithmes itératifs.
+    En particulier, le candidat doit présenter des exemples mettant en évidence l’intérêt de la notion
+    d’invariant pour la correction partielle et celle de variant pour la terminaison des segments itératifs.
+    Une formalisation comme la logique de \bsc{Hoare} pourra utilement être introduite dans cette leçon, à
+    condition toutefois que le candidat en maîtrise le langage. Des exemples non triviaux de correction
+    d’algorithmes seront proposés. Un exemple de raisonnement type pour prouver la correction des algorithmes gloutons pourra éventuellement faire l’objet d’un développement.
+\end{rapport}
+
+\secindispensables
+
+\begin{itemize}
+	\item Notions de correction et terminaison
+    \item Méthodes de preuves
+    \item Des EXEMPLES de preuves
+\end{itemize}
+
+\secasavoir
+
+\begin{itemize}
+	\item Assertions, préconditions et
+    postconditions, invariants et variants de boucles, logique de \bsc{Hoare}, induction structurelle.
+\end{itemize}
+
+\secidees
+
+\begin{itemize}
+	\item Correction et complétude de la logique de Hoare
+    \item Algorithmes parallèles
+\end{itemize}
+
+\secpieges
+
+\begin{itemize}
+	\item Il peut être intéressant de faire des liens avec des notions mathématique bien connu (\bsc{Syracuse}, Conjecture de \bsc{Collatz})
+    \item Leçons très facile à motiver, alors faite le !
+\end{itemize}
+
+\secquestionsclassiques
+
+\begin{itemize}
+	\item La terminaison est-elle décidable ? La correction ?
+    \item Peut-on automatiser ce genre d'analyse ? Quelles outils connaissez-vous ?
+    \item Comment influe les paradigmes de programmation ?
+    \item  Existe-t-il une variante de la logique de \bsc{Hoare} pour les programmes avec des structures à champs modifiable et des pointeurs vers ces structures ?
+    \item Quelle est la valeur d'une preuve de programme dans le monde réel ?
+    \item Si on ne cherche pas une preuve parfaite mais uniquement des garanties partielle, quelles techniques peut-on utiliser ?
+     
+\end{itemize}
+
+\secreferences
+
+\begin{itemize}
+\item \input{refs/cormen}
+\item \input{refs/winskel}
+\end{itemize}
+
+\secdev
+
+\begin{itemize}
+\item \input{dev/factorielhoare}
+\item \input{dev/correctionalgo}
+\end{itemize}
+
+
+\end{document}
