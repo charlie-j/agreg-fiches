@@ -2,6 +2,10 @@
 
 \title{Leçon 912 - Fonctions récursives primitives et non primitives. Exemples}
 
+
+% V1 par Charlie Jacomme
+% Relu par Jean Goubaut-Larrecq
+
 \begin{document}
 \maketitle
 
@@ -17,48 +21,52 @@
 \secindispensables
 
 \begin{itemize}
-	\item Des \textbf{exemples}, partout, pour tout. (somme fini, produit fini...) 
-	\item Définitions des fonctions primitives récursives de bases, primitives récursives et non-primitive récursive ($\mu$-récursives, i.e avec minimisation non borné).
-	\item Prédicat primitifs et fonctions caractéristique. Minimisation borné.
+	\item Des \textbf{exemples}, partout, pour tout. (somme finie, produit fini, factorielle, conditionnelles...) 
+	\item Définitions des fonctions primitives récursives de bases, primitives récursives et non-primitives récursives ($\mu$-récursives, i.e avec minimisation non bornée).
+	\item Prédicats primitifs et fonctions caractéristiques. Minimisation bornée.
   
 \end{itemize}
 
 \secasavoir
 
 \begin{itemize}
-	\item \bsc{Ackerman}
-	\item Lien avec les TM, ensembles récursifs, récursivement énumérable et fonctions partiels.
+	\item Fonction d'\bsc{Ackermann}.
+	\item Lien avec les machines de \bsc{Turing}, ensembles récursifs, récursivement énumérables et fonctions partielles.
 \end{itemize}
 
 
 \secidees
 
 \begin{itemize}
-
-	\item Hiérarchie de \bsc{Grzegorczyk}
-	\item Lien avec le $\lambda$-calcul
-	\item Théorème d'itération ($s_{mn}$),
+	\item Lien avec le $\lambda$-calcul.
+	\item Hiérarchie de \bsc{Grzegorczyk} (si vous savez le motiver de manière convaincante)
+	\item Théorème d'itération ($s_{mn}$), borderline.
 \end{itemize}
 
 \secpieges
 
 \begin{itemize}
+    \item Bien réfléchir et insister sur les motivations.
 	\item Mettre des exemples intéressants.
     \item Faire des liens avec les constructions des langages de programmation.
-	\item Ne pas définir les fonctions récursives primitives autrement que à partir de celles de bases.
+	\item Ne pas définir les fonctions récursives primitives autrement que à partir de celle de bases.
+    \item Ne pas se tromper sur la définition de la minimisation. Le bug standard est de seulement dire que sur $f$, le but est de retourner le premier $n$ tel que $f(n) \neq 0$. Avec cette définition, on peux résoudre le problème de l'arrêt... Il faut aussi préciser que l'on renvoi ce $n$ uniquement si la fonction répond (et donc termine) sur les entrées précédentes.
+    \item Utiliser des exemples pour souligner le pouvoir expressif, et son évolution.
 \end{itemize}
 
 \secquestionsclassiques
 
 \begin{itemize}
-	\item Pourquoi considérer les fonctions récursive primitives ?
+	\item Pourquoi considérer les fonctions récursive primitives ? % raison historique avec leur introduction par Godel pour son premier théorème d'incomplétude. Elles correspondent assez bien à la définition de la récursion dans les langages de programmation, et permettent de bien mettre en évidence la différence d'expressivité entre FOR et WHILE (ce qui est moins clair sur les TM). Enfin, c'est naturel pour tout ce qui est calcul sur les entiers, qui permettent cela dit d'encoder beaucoup de choses.
 	\item Différence entre la récursion définit ici et celle des langages de programmation.
     \item Quelle construction capture la boucle FOR ? La boucle WHILE ?
 	\item L'encodage d'un problème est-il toujours calculable ? Pourquoi sont définis ainsi les fonctions récursives primitives de bases ?
 	\item Exemple d'argument diagonal.
 	\item Montrer que telle fonction est primitive récursive.
-	
+    \item Quelles est la classe de machines de \bsc{Turing} équivalent aux fonctions récursives primitives ? % les machines en temps primitifs récursifs. Il suffit de mettre un timeout. Tout ce qui est calculable avec une complexité pas trop grande est en fait récursif primitif via time out !
+    \item Pour tous problèmes ayant une complexité raisonnable, est-ce que le FOR suffit pour les décider ?	
 \end{itemize}
+
 \secreferences
 
 \begin{itemize}
@@ -69,8 +77,8 @@
 \secdev
 
 \begin{itemize}
-    \item  \input{dev/nonprimtive}
-    \item \input{dev/turingismurecusrive}
+    \item[++]  \input{dev/nonprimtive}
+    \item[+] \input{dev/turingismurecusrive}
 \end{itemize}
 
 

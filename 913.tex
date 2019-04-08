@@ -2,6 +2,10 @@
 
 \title{Leçon 913 -- Machines de Turings. Applications.}
 
+% V1 par Emilie Grienberger
+% Relu par Aliaume Lopez, Charlie Jacomme
+% Relu par Jean Goubaut-Larrecq
+
 \begin{document}
 
 \maketitle
@@ -20,9 +24,10 @@ Plusieurs développements peuvent être communs avec une des leçons 914, 915, m
 \secindispensables
 
 \begin{itemize}
-    \item Définitions des machines de Turing déterministes, non déterministes.
-    \item Reconnaissabilité (mot, langage).
-    \item Machine de Turing universelle.
+    \item Définitions des machines de \bsc{Turing} déterministes.
+    \item Reconnaissabilité (mot, langage). Codages de langages. % l'un des intérêt du modèle est de pouvoir coder beaucoup de choses.
+    \item Machine de \bsc{Turing} universelle.
+    \item Définition d'un problème décidable, indécidable. Problème de l'arrêt.
 \end{itemize}
 
 
@@ -30,15 +35,15 @@ Plusieurs développements peuvent être communs avec une des leçons 914, 915, m
 
 
 \begin{itemize}
-  	\item Stabilité des notions pour les variantes des machines de Turing : non
+  	\item Stabilité des notions pour les variantes des machines de \bsc{Turing} : non
     déterminisme (existentiel, universel, alternant), 
-    plusieurs rubans, alphabet ou nombre d'états restreints.
-	\item Décidabilité : définition d'un problème décidable, indécidable.
-	\item Langages récursifs, récursivement énumérables
-	\item Indécidabilité, problème de l'arrêt, \bsc{Rice} et réductions.
+    plusieurs rubans, alphabet ou nombre d'états restreints. % encore un intérêt du modèle.
+    \item Machine non déterministes.
+	\item Langages récursifs, récursivement énumérables.
+	\item Indécidabilité,  \bsc{Rice} et réductions.
 	\item Calculabilité : définition d'une fonction calculable.
 	\item Exemples de fonctions calculables : fonctions arithmétiques.
-	\item Expressivité : équivalence avec les fonctions récursives, le lambda-calcul.
+	\item Expressivité : équivalence avec les fonctions récursives.
 	\item Complexité : définition de la complexité en temps, espace.
 \end{itemize}
 
@@ -46,37 +51,44 @@ Plusieurs développements peuvent être communs avec une des leçons 914, 915, m
 \secidees
 
 \begin{itemize}
+    \item Ne pas oublier des exemples, pour montrer comment fonctionne le modèle.
+    \item Équivalence avec le lambda-calcul.
 	\item Limites de la stabilité (machines en espace linéaire/constant, 
 	machines n'écrivant pas sur leur entrée,
-	calculant en temps $o(\log \log n)$)
+	calculant en temps $o(\log \log n)$).
 	\item Lien avec des notions plus faibles de calcul (automates, grammaires
-	algébriques)
-	\item Lien avec les machines à compteur (de \bsc{Minsky}), ou les machines RAMs
-
+	algébriques).
+	\item Lien avec les machines à compteur (de \bsc{Minsky}), ou les machines RAMs.
+    \item Des classes au delà du récursivement énumérable. (si on sait justifier leur intérêt)  % $\pi_1$ complet implique qu'on est non capturable par la logique
 \end{itemize}
 
 \secpieges
 
 \begin{itemize}
+    \item Beaucoup de choses à dire, pas besoin de partir dans des choses pas maîtrisées.
     \item Cf rapport, ne pas avoir une leçon trop inspirée des leçons 914, 915.
     \item Chaque livre a une définition des machines de Turing : il faut rester cohérent, et faire attention aux résultats utilisés.
-    \item Justifier le formalisme introduit et son utilité en comparaison
-        aux autres modèles
-    \item Une machine de Turing peux calculer une fonction, reconnaitre un language, ou bien l'énumérer. Comprendre les différences et les liens entre ces notions.
+    \item MOTIVER ! Justifier le formalisme introduit et son utilité en comparaison
+        aux autres modèles. 
+    \item Une machine de \bsc{Turing} peut calculer une fonction, reconnaître un langage, ou bien l'énumérer. Comprendre les différences et les liens entre ces notions.
     \item Faire attention à la reconnaissabilité pour les machines 
         non déterministes.
+    \item Attention aux définitions de bases sur la reconnaissabilité, où des petits changements de définition peuvent fortement changer ce qu'on obtient. Notamment sur les notions d'arrêt sur toute entrées.
      \item Attention à bien travailler sur des $Q$ et $\Sigma$
       finis.
-      \item Il est facil d'illustrer le principe du ruban et de la tête de lecture par un dessin.
+      \item Il est facile d'illustrer le principe du ruban et de la tête de lecture par un dessin.
 \end{itemize}
 
 \secquestionsclassiques
 
 \begin{itemize}
     \item Quel est l'intérêt des machines de Turing ?
+    % c'est une abstraction bas niveau de ce qu'on peut calculer avec des algorithmes. C'est donc pratique pour raisonner dessus, mais pas fait pour écrire des algorithmes.
     \item Quel sens donner au \emph{calcul} d'une machine de Turing non
         déterministe ?
-    \item Quelle est l'intérêt d'une machine de Turing universelle ?
+    \item Pourquoi préférer les machines de \bsc{Turing} aux machines RAM ?
+        % notion de localité des calculs.
+    \item Quel est l'intérêt d'une machine de Turing universelle ?
     \item Dans quel sens une machine de Turing est-elle proche d'un ordinateur
         classique ?
     \item En quoi les classes de complexités sont liées à l'efficacité des
@@ -92,17 +104,17 @@ Plusieurs développements peuvent être communs avec une des leçons 914, 915, m
     \item \input{refs/wolper}
     \item \input{refs/sipser}
     \item \input{refs/arorabarak}
+    \item Éviter le \bsc{papadimitriou}, souvent faux dans ses preuves.
 \end{itemize}
 
 
 \secdev
 
 \begin{itemize}
-    \item \input{dev/turingismurecusrive}
-        \item \input{dev/cook}
-
-    \item \temporary{Indécidabilité de l'arrêt et applications à quelques problèmes indécidables}
-    \item \temporary{Équivalence entre deux variantes des machines de Turing}
+    \item[+] \input{dev/turingismurecusrive}
+    \item[-] \input{dev/cook}
+    \item[+] \temporary{Indécidabilité de l'arrêt et applications à quelques problèmes indécidables} ref ?
+    \item[++] \temporary{Équivalence entre deux variantes des machines de Turing} ref ?
     
 \end{itemize}
 
