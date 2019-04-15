@@ -1,0 +1,84 @@
+
+\documentclass{agregfiche}
+
+\title{Leçon 923 - Analyses lexicale et syntaxique. Applications.}
+
+\begin{document}
+\maketitle
+
+\secrapports
+\begin{rapport}{2018}
+    Cette leçon ne doit pas être confondue avec la 909, qui s’intéresse aux seuls langages rationnels, ni avec
+    la 907, sur l’algorithmique du texte.
+    Si les notions d’automates finis et de langages rationnels et de grammaires algébriques sont au cœur
+    de cette leçon, l’accent doit être mis sur leur utilisation comme outils pour les analyses lexicale et
+    syntaxique. Il s’agit donc d’insister sur la différence entre langages rationnels et algébriques, sans perdre
+    de vue l’aspect applicatif : on pensera bien sûr à la compilation. Le programme permet également des
+    développements pour cette leçon avec une ouverture sur des aspects élémentaires d’analyse sémantique.
+\end{rapport}
+
+\begin{rapport}{2017}
+[\dots]    On pourra s’intéresser à la transition entre analyse lexicale et analyse syntaxique, et on pourra présenter les outils associés classiques, sur un exemple
+    simple. Les notions d’ambiguïté et l’aspect algorithmique doivent être développés. La présentation
+    d’un type particulier de grammaire algébrique pour laquelle on sait décrire un algorithme d’analyse
+    syntaxique efficace sera ainsi appréciée. [\dots]
+    \end{rapport}
+
+\secindispensables
+
+\begin{itemize}
+	\item Grammaires et Langages algébriques. Existence de langages non algébriques. Propriétés de clôture
+    des langages algébriques.
+    \item Chaîne de compilation. Analyse lexicale. Analyse syntaxique (principes de l’analyse descendante
+    et ascendante). 
+\end{itemize}
+
+\secasavoir
+
+\begin{itemize}
+    \item Formes normales de Chomsky
+	\item Automate à pile et équivalence avec les langages algébriques.
+    \item Analyse sémantique élémentaire (arbre de syntaxe abstraite, table des symboles,
+    analyse de portée, typage, ...).
+    \item Grammaires LL(k) ou LR(k)
+\end{itemize}
+
+\secidees
+
+\begin{itemize}
+	\item 
+\end{itemize}
+
+\secpieges
+
+\begin{itemize}
+    \item Des DESSINS, de la chaîne de compilation, d'arbre de dérivation, d'automate, de règles de grammaires,...
+    \item Mettre des exemples. Bien s'entraîner à faire tourner les algorithmes sur des exemples (notamment pour l'analyse lexical)
+	\item Attention à ne pas trop se perdre sur certain théorique. On peut notamment se perdre et ne pas savoir répondre aux questions autour des parseurs LL, LR, LALR et SLR.
+
+\end{itemize}
+
+\secquestionsclassiques
+
+\begin{itemize}
+	\item Qu'utilisent en pratique les programmeurs pour écrire des parseurs ? Quelles types de grammaire est reconnu par ces outils ?
+% lex and yacc, LALR
+\item Peut-on comparer les parseurs LALR, LR, LL, SLR ? Si  des inclusions sont strictes, avez-vous des exemples ?
+% LALR < LR < SLR, LALR(j) incomparable avec LL(k)
+\item Quelles sont les applications de l'analyse lexicale et syntaxique ? Avez-vous un exemple où la complexité est critique ?
+\end{itemize}
+
+\secreferences
+
+\begin{itemize}
+\item \input{refs/dummy}
+\end{itemize}
+
+\secdev
+
+\begin{itemize}
+\item \input{dev/dummy}
+\end{itemize}
+
+
+\end{document}
