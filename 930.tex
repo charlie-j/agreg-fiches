@@ -1,5 +1,9 @@
 \documentclass{agregfiche}
 
+% V1 par Aliaume Lopez
+% Relu par Charlie Jacomme
+% Relu par David Baelde
+
 \title{Leçon 930 -- Sémantique des langages de programmation. Exemples.}
 
 \begin{document}
@@ -27,95 +31,97 @@
 \secindispensables
 
 \begin{itemize}
-    \item Sémantique opérationnelle (petit/grand pas) et dénotationnelle
-        des expressions arithmétiques élémentaires.
-    \item Adéquation et de correction entre les 
-        sémantiques
-    \item Utiliser la sémantique pour énoncer des propriétés (correction d'un
-        programme, terminaison, validité d'une optimisation)
+    \item Sémantique opérationnelle (petit/grand pas) et dénotationnelle des commandes de IMP.
+    \item Équivalences entre les 
+        sémantiques.
+     \item Exemples de programmes, avec une interprétation de leur 
+     correction dans une des sémantiques présentées ci-dessus.
 \end{itemize}
 
 \secasavoir
 
 \begin{itemize}
-	\item Sémantique\underline{s} des commandes d'um langage jouet choisi.
-
-	\item Exemples de programmes, avec une interprétation de leur 
-	correction dans une des sémantiques présentées
-	\item Justification des choix des constructeurs du langage utilisé
-	\item Étudier les effets et leur traitement dans les différents modèles 
-	(non-terminaison, non-déterminisme)
-	\item Lien avec d'autres leçons~: 
-	sémantique petit pas pour le lambda-calcul et les machines de Turing,
-	sémantique à grand pas pour la logique (arbres de preuve),
-	sémantique dénotationnelle pour les expressions rationnelles (langage).
-	\item Utiliser la sémantique pour énoncer des propriétés (correction d'un
-	programme, terminaison, validité d'une optimisation)
+	\item Utiliser la sémantique pour énoncer des propriétés : correction d'un
+	programme, terminaison, validité d'une optimisation.
+    \item Compositionnalité de la sémantique dénotationnelle, qui fait que l'équivalence est une congruence.
+    \item Identifier les relations fonctionnelles ou totales.
 \end{itemize}
 
 \secidees
 
 \begin{itemize}
-    \item Éviter le formalisme des CPO n'est pas forcément le plus simple
+\item Sémantique axiomatique (logique de Hoare).
+\item Paresse dans les expressions booléennes et non terminaison.
+\item Effets de bords dans les expressions.
+\item Instructions break et continue (en petit pas ou axiomatique).
+
 \end{itemize}
 \secpieges
 
 \begin{itemize}
-    \item Il n'est pas nécessaire d'aller vers les langages fonctionnels
-        pour faire une bonne leçon, IMP suffit largement !
+    \item Dans IMP, seule la non terminaison empêche d'avoir un résultat dans la sémantique à grand pas (ou dénotationnelle), ce qui n'est pas toujours le cas. En toute généralité, la non terminaison se définit plutôt à petit pas.
+    \item Définir les expressions comme des termes.
+        \item On peut définir la sémantique dénotationelle du while simplement comme un sup, et ainsi éviter le formalisme des CPO.  Si on parle de point fixe, il faut connaître le théorème d'existence, et illustrer son intérêt. Par exemple, cela montre que le while et son déroulé ont la même sémantique.
     \item Bien faire attention aux références qui prennent des directions 
         \emph{incompatibles} très tôt. Par exemple, si le domaine de définition
         des variables est $\mathbb{N}$ alors l'opération de soustraction 
         doit être \emph{binaire}, alors que dans le cas de $\mathbb{Z}$ on peut 
-        se contenter d'une soustraciton \emph{unaire}.
-    \item Il faut présenter les trois principales sémantiques (petit pas, grand
-        pas, dénotationnel) mais ne pas oublier de \emph{justifier} leur intérêt
-        propre ! Se demander pourquoi on en a trois est d'ailleurs pertinent.
+        se contenter d'une soustraction \emph{unaire}.
+        	\item Réfléchir aux liens avec d'autres leçons~: 
+        sémantique petit pas pour le lambda-calcul et les machines de Turing,
+        sémantique dénotationnelle pour les expressions régulière (langage).
 \end{itemize}
 
 
 \secquestionsclassiques
 
 \begin{itemize}
-    \item \temporary{Le grand classique des CPO plats, et de la boucle while qui converge 
-        en un nombre fini d'étapes... Sauf que c'est pour une valeur fixée !}
     \item Quel est l'intérêt des différentes sémantiques ?
-    \item Pour quelle sémantique la notion de complexité est-elle 
-        la plus naturelle ?
-    \item Pour le programme d'une centrale nucléaire, quelle sémantique 
-        paraît la plus adaptée ?
+    \item Quelles sémantiques permettent de définir une notion de complexité ?
+%        
+%    \item Pour le programme d'une centrale nucléaire, quelle sémantique 
+%        paraît la plus adaptée ?
+    \item Quelles sémantiques sont utilisées en pratique pour vérifier des programmes ? 
+    
+    \item Quelle sémantique permet de vérifier un programme qui ne termine pas ?
+    
     \item Peut-on faire un lien entre la sémantique dénotationnelle
         et la preuve de programme ?
+        
     \item Calculer la sémantique dénotationnelle d'un programme 
         avec une boucle while simple (division euclidienne, fibonacci...)
-    \item Conaissez-vous un langage pour lequel il n'y a pas 
-        de théorème d'adéquation ? De théorème de correction ?
+%    \item Conaissez-vous un langage pour lequel il n'y a pas 
+%        de théorème d'adéquation ? De théorème de correction ?
+%        
     \item Connaissez-vous un autre moyen de définir une sémantique ?
-        (Jeux, plus faible précondition)
-    \item \emph{(si les CPO ont été introduits)}
-        Justifier que le $(\sup f_i) (x) = \sup f_i (x)$
-        si $f_i$ est une famille dirigée d'applications 
-        scott-continues.
+        (plus faible précondition)
+    \item Vérifier la continuité de la fonction utilisée pour définir le WHILE ? (si il a été défini ainsi)
     \item Comment ajouter un choix non déterministe dans 
         vos sémantiques ?
     \item Comment ajouter un choix probabiliste (pièce non biaisée par exemple)
         ?
+        \item Est-ce que IMP est Turing-complet ? L'équivalence est-elle décidable ?
 \end{itemize}
 
 \secreferences
 
 \begin{itemize}
-\item \temporary{Glynn Winskel}
-\item \temporary{\url{http://www.cl.cam.ac.uk/~gw104/dens.pdf}}
-    (aussi Glynn Winskel)
+\item \input{refs/winskel}
+%\item \temporary{\url{http://www.cl.cam.ac.uk/~gw104/dens.pdf}}
+%    (aussi Glynn Winskel)
 \end{itemize}
 
 \secdev
 
 \begin{itemize}
-\item \temporary{Complétude de Hoare}
-\item \temporary{Équivalence de sémantiques}
-\item \temporary{Calcul de la sémantique d'un programme (factorielle, division euclidienne)}
+\item[++]  \input{dev/semantiqueeoperdenotequiv}
+
+\item[++]  \input{dev/semantiqueprogrammeequiv}
+
+%\temporary{}
+%\item[-] \temporary{Complétude de Hoare}
+%Attention difficile
+
 \end{itemize}
 
 
