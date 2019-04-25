@@ -40,23 +40,67 @@ des algorithmes proposés et sur la question de leur complexité en espace.
 
 
 \secindispensables
-
-
-\secidees
+\begin{itemize}
+    \item Approche gloutonne, diviser pour régner, programmation dynamique.
+    \item Exemples (les plus classiques étant : algorithme de Dijkstra, tri fusion, plus longue sous-séquence commune).
+\end{itemize}
 
 \secasavoir
 
+\begin{itemize}
+    \item Des exemples moins classiques (Prim ou Kruskal, Hopcroft ou Karatsuba ou recherche de pair de points les plus proches ou FFT, multiplication de plusieurs matrices ou CYK,...  )
+    \item Approche ascendante et descendante de la programmation dynamique.
+    \item Calcul de complexité par formule de récurrence.
+    \item Complexité en espace.
+    \item Influence du schémas algorithmiques sur les preuves de correction et de complexité.
+\end{itemize}
+
+\secidees
+
+\begin{itemize}
+    \item Des exemples de plus en plus compliqués.
+    \item Problèmes d'optimisation et algorithmes approchés ?
+\end{itemize}
+
 \secpieges
 
-
+\begin{itemize}
+    \item Présenter les trois schémas et un unique exemple simple pour chacun risque de faire un plan peu intéressant, il faut probablement creuser l'un des schémas.
+    \item On ne doit pas voir un catalogue de schémas et d'algorithme. Il faut absolument justifier les enchaînements, et les forces et faiblesses relative entre les différents paradigmes.
+    \item Il faut maîtriser les ouvertures liés aux différents algorithmes présentés (prouver la correction, prouver la complexité, détails d'implémentation, est-ce le meilleur algorithme pour faire cela ?,\ldots).
+    
+\end{itemize}
 
 \secquestionsclassiques
 
+\begin{itemize}
+    \item Donner un exemple d'algorithme glouton et d'entrée sur laquelle la solution optimale est atteinte ? Une sur laquelle elle n'est pas atteinte ?
+    \item Quelle est la différence entre diviser pour régner et la programmation dynamique ?
+%    diviser pour régner = sous structure optimal
+%   dynamique = sous structure optimal +  chevauchement des sous problèmes.
+    \item Quelle est le lien entre la programmation dynamique et la mémoisation ?
+%   mémoisation est un sous cas de la pro dynamique.
+    \item Avantages et désavantages de l'approche gloutonne ? De diviser pour régner, de la programmation dynamique ?
+%    1) algorithme simple et efficace, mais ne retournant pas toujours une solution optimale
+%   2) algorithme efficace, calcul simple de complexité, potentiellement parallélisable, mais stack overflow, et le choix du cas de base peux grandement changer la complexité. On résoud aussi potentiellement plusieurs fois le même problème.
+%   3) la mémoization évite le problème précédent, mais induit un coup mémoire plus grand, limite la parallélisation et augmente les coup d'accès mémoire.
+    \item Exemple de problème ne vérifiant pas la propriété de sous structure optimal ?
+    \item Certaines structure de données sont-elles plus pertinente que d'autres pour la mémoisation ?
+\end{itemize}
 
 \secreferences
 
+\begin{itemize}
+    \item \input{refs/cormen}
+    \item \input{refs/beauquier}
+\end{itemize}
 
 \secdev
+
+\begin{itemize}
+    \item \input{dev/plsc}
+    \item \input{dev/tri_rapide}
+\end{itemize}
 
 
 \end{document}
