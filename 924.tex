@@ -1,0 +1,128 @@
+
+\documentclass{agregfiche}
+
+\title{Leçon 924 - Théories et modèles en logique du premier ordre. 
+Exemples.}
+
+\begin{document}
+\maketitle
+
+\secrapports
+\begin{rapport}{2018}
+    Le jury s’attend à ce que la leçon soit abordée dans l’esprit de 
+    l’option informatique, en insistant plus
+    sur la décidabilité/indécidabilité des théories du premier ordre 
+    que sur la théorie des modèles.
+    Il est attendu que le candidat donne au moins un exemple de 
+    théorie décidable (respectivement com-
+    plète) et un exemple de théorie indécidable. Si le jury peut 
+    s’attendre à ce que le candidat connaisse
+    l’existence du théorème d’incomplétude, il ne s’attend pas à ce 
+    que le candidat en maîtrise la démons-
+    tration.
+\end{rapport}
+
+\secindispensables
+
+\begin{itemize}
+	\item Syntax et Sémantique. Interprétation d’une formule dans un 
+	modèle. Validité et satisfiabilité. 
+    \item Cohérence et complétude. 
+    \item décidabilité et indécidabilité
+    \item Exemples de théories.
+\end{itemize}
+
+
+
+
+
+\secasavoir
+
+\begin{itemize}
+	\item Théorie de l'égalité, arithmétique de \bsc{Peano}.
+    \item  Théorème de complétude du calcul des prédicats du premier 
+    ordre.
+    \item Théorème d'incomplétude.
+    \item Théorème de compacité.
+\end{itemize}
+
+\secidees
+
+\begin{itemize}
+    \item Théorie de \bsc{Presburger}, Groupes.
+	\item Théorème de \bsc{Lowemheim}-\bsc{Skolem}.
+    \item Modèle et Théorème de \bsc{Herbrand}, complétude de la 
+    résolution.
+    \item Axiome indépendant.
+    \item Élimination des quantificateurs.
+\end{itemize}
+
+\secpieges
+
+\begin{itemize}
+	\item Sujet vaste où il est facile de se perdre. Il faut essayer 
+	de bien comprendre la signification et les implications des 
+	théorèmes et des propriétés, et non juste leur formulation.
+    \item Il faut avoir en tête (ou dans ses notes) des petits 
+    exemples simples de théories de différents types.
+    \item Avoir un petit exemple de preuve dans une certaine théorie 
+    (par exemple l'égalité).
+    \item On peut montrer la décidabilité de l'arithmétique de 
+    \bsc{Presburger} avec des automates. On peut montrer 
+    l'indécidabilité 
+    de l'arithmétique de \bsc{Peano} en passant par l'indécidabilité 
+    de la 
+    terminaison d'un programme. On peut considérer l'ensemble des 
+    relations définissables, ce qui mène a considérer les bases de 
+    données relationnelles. Les modèles de \bsc{Herbrand} mène à la 
+    complétude de la méthode de résolution. Bref, il y a des liens 
+    avec les autres 
+    leçons, il faut en avoir conscience.
+    \item Ne pas confondre la notion de complétude d'un système de 
+    preuve et la complétude d'une théorie.
+    \item Il peut être bien d'avoir quelques idées d'applications en 
+    tête : il existe des groupes de toute cardinalités,
+\end{itemize}
+
+\secquestionsclassiques
+
+\begin{itemize}
+	\item Est-ce que la théorie des groupes est complètes ?
+    \item Exemple d'un modèle non standard de l'arithmétique de 
+    \bsc{Peano}
+    ?
+    \item Comment prouver qu'une théorie n'est pas contradictoire ?
+%    Par le théorème de correction, il suffit d'exhiber un modèle 
+%satisfiant ses axiomes. En effet, un modèle ne peut satisfaire à la 
+%fois un thm et sa négation.
+    \item Un exemple de théorie complète ? décidable ? indécidable ? 
+    ...
+    \item Peut-on avoir une théorie complète et décidable ? complète 
+    et indécidable ? incomplète et décidable ?
+%    Prendre n'importe qu'elle th complète, car Complète => 
+%décidable. non. Oui, l'égalité sans symbole de function, avec F = 
+%forall x y. x=y
+    \item La théorie vide est-elle décidable ? Complète ?
+% indécidable, par le théorème de church turing. indécidable => 
+%incomplétude
+\end{itemize}
+
+\secreferences
+
+\begin{itemize}
+\item \input{refs/goubault}
+\item \input{refs/david}
+\item \input{refs/dowek}
+
+\end{itemize}
+
+\secdev
+
+\begin{itemize}
+%\item \input{dev/olin}
+\item \input{dev/peano}
+\item \input{dev/presburger}
+\end{itemize}
+
+
+\end{document}
