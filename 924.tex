@@ -28,7 +28,7 @@ Exemples.}
 	\item Syntax et Sémantique. Interprétation d’une formule dans un 
 	modèle. Validité et satisfiabilité. 
     \item Cohérence et complétude. 
-    \item décidabilité et indécidabilité
+    \item Décidabilité et indécidabilité
     \item Exemples de théories.
 \end{itemize}
 
@@ -81,13 +81,17 @@ Exemples.}
     \item Ne pas confondre la notion de complétude d'un système de 
     preuve et la complétude d'une théorie.
     \item Il peut être bien d'avoir quelques idées d'applications en 
-    tête : il existe des groupes de toute cardinalités,
+    tête : il existe des groupes de toute cardinalités, ...
 \end{itemize}
 
 \secquestionsclassiques
 
 \begin{itemize}
-	\item Est-ce que la théorie des groupes est complètes ?
+	\item Est-ce que la théorie des groupes est cohérente ? complètes 
+	?
+%    Oui, car il existe un groupe. Non, on exhibe une formule vraie 
+%dans un modèle et pas dans un 
+%autre, par ex l'idempotence.
     \item Exemple d'un modèle non standard de l'arithmétique de 
     \bsc{Peano}
     ?
@@ -105,6 +109,10 @@ Exemples.}
     \item La théorie vide est-elle décidable ? Complète ?
 % indécidable, par le théorème de church turing. indécidable => 
 %incomplétude
+    \item  Est-ce que $T \vdash A \Leftrightarrow B$ si et seulement 
+    si $T 
+    \vdash A \Leftrightarrow T\vdash B$ ?
+%  Non,  T = emptyset, A = p(), B = q()
 \end{itemize}
 
 \secreferences

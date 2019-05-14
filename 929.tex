@@ -22,6 +22,8 @@ Ainsi, le candidat doit motiver l'intérêt du lambda-calcul pur sur les entiers
 \begin{itemize}
     \item Définitions : lambda-termes, alpha-équivalence, substitution.
     \item $\beta$-redex, $\beta$-réduction, confluence.
+   	\item Stratégies d'évaluation (gauche, tête)
+   	\item Expressivité : équivalence avec les fonctions primitives.
 \end{itemize}
 
 \secasavoir
@@ -30,9 +32,8 @@ Ainsi, le candidat doit motiver l'intérêt du lambda-calcul pur sur les entiers
 	\item Représentation des données : entiers, booléens.
 	\item Fonctions représentables.
 	\item Exemples : fonctions arithmétiques, conditionnelle.
-	\item Exemples : fonctions récursives avec combinateur de point fixe.
-	\item Expressivité : équivalence avec les fonctions primitives.
-	\item Stratégies d'évaluation (gauche, tête)
+	\item Exemples : fonctions récursives avec combinateur de point 
+	fixe.
 \end{itemize}
 
 \secidees
@@ -50,8 +51,18 @@ Ainsi, le candidat doit motiver l'intérêt du lambda-calcul pur sur les entiers
 
 \begin{itemize}
     \item Ne pas sortir du cadre "modèle de calcul".
-    \item Surtout ne pas parler de système de type
-    \item Bien doser le temps passé sur la substution et l'alpha équivalence
+    \item Surtout ne pas parler de système de type.
+    \item Bien doser le temps passé sur la substution et l'alpha 
+    équivalence.
+    \item Avoir en tête (ou dans ses notes) les petits exemples de 
+    bases (pour la non terminaison de la $\beta$-réduction, pour la 
+    différence entre fortement et faiblement normalisant,...)
+    \item Voir le lien entre stratégie et appel par nom ou valeur (ou 
+    paresseuse)
+    dans les langages de programmations.
+    
+%   B = (lambda x.xx)(lambda x.xx), C= (lambda y.x)B,
+
 \end{itemize}
 
 \secquestionsclassiques
@@ -59,6 +70,7 @@ Ainsi, le candidat doit motiver l'intérêt du lambda-calcul pur sur les entiers
 \begin{itemize}
     \item Quel est l'intérêt du $\lambda$-calcul ?
     \item Donner un contre exemple à la forte confluence.
+%     (lambda x (x+x))(3+4)
     \item Citer un combinateur de point fixe.
     \item Le combinateur de point fixe donné 
         fonctionne-t-il correctement en appel 
@@ -74,17 +86,15 @@ Ainsi, le candidat doit motiver l'intérêt du lambda-calcul pur sur les entiers
 \secreferences
 
 \begin{itemize}
-    \item \temporary{Krivine}
-    \item \temporary{Barendregt}
+    \item \input{refs/krivine}
 \end{itemize}
 
 
 \secdev
 
 \begin{itemize}
-    \item \temporary{Equivalence entre fonctions récursives et fonctions représentables}
-    \item \temporary{Le minimisation est fortement représentable}
-    \item \temporary{Confluence du lambda-calcul}
+    \item \input{dev/lambdaequivrecursive}
+
 \end{itemize}
 
 
