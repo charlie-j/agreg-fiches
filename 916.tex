@@ -17,11 +17,10 @@ normales, satisifiabilité. Applications.}
 \secindispensables
 
 \begin{itemize}
-    \item La syntaxe et la sémantique des propositions,
-        le lien avec les tables de vérité
+    \item Syntaxe et la sémantique des propositions, tables de vérité.
    	\item Formes normales (CNF, DNF, BDD),
-    \item Les méthodes syntaxiques de preuve (déduction naturelle,
-        calcul des séquents, résolution)
+    \item Les méthodes syntaxiques de preuve. (déduction naturelle,
+calcul des séquents, résolution)
     \item Validité, satisfiabilité.
 
 \end{itemize}
@@ -29,12 +28,13 @@ normales, satisifiabilité. Applications.}
 \secasavoir
 
 \begin{itemize}
+    \item Complétude du calcul propositionnelle.
     \item Les méthodes sémantiques de preuve (DPLL, tableau, 
-table de vérité, BDD)
-	\item Complexité ave SAT, 3SAT, HORNSAT, et 2SAT
+table de vérité, BDD).
+	\item Complexité ave SAT, 3SAT, HORNSAT, et 2SAT.
 	\item Système de connecteurs, complétude (le XOR est complet).
 	pour chacune la complexité des problèmes de décision, 
-	et du passage d'une forme à l'autre (pour la validité ? pour la
+	et du passage d'une forme à l'autre. (pour la validité ? pour la
 	satisfiabilité ?)
 \end{itemize}
 
@@ -42,19 +42,21 @@ table de vérité, BDD)
 \secidees
 
 \begin{itemize}
-    \item Le théorème de compacité (validé par le jury en 2018)
-    \item Justifier l'étude du fragment propositionnel
-        via Herbrand
-    \item Évoquer la résolution au premier ordre
+    \item Le théorème de compacité.
+%    (validé par le jury en 2018)
+    \item L'étude du fragment propositionnel
+        via Herbrand.
+    \item La résolution au premier ordre.
     \item Applications des SAT solvers 
         (HAMPATH, Sudoku, coloration de graphes, crack de MD5). 
         Attention les réductions sont \emph{à l'envers} !
-    \item Affirmer plus de choses sur les BDD (représentation mémoire
+%    \item Affirmer plus de choses sur les BDD (représentation mémoire
         via hash-consing,
         étude de cas pathologiques).
-    \item Passer plus de temps sur les systèmes complets, les problèmes sont-ils 
+%    \item Passer plus de temps sur les systèmes complets, les 
+%problèmes sont-ils 
         plus ou moins durs en fonction du système de connecteur choisi~?
-    \item Parler de la génération de circuits
+    \item Génération de circuits.
     \item Application de HORNSAT aux gestions de dépendances (analyse
         syntaxique, transformation d'automates et grammaires)
 \end{itemize}
@@ -62,11 +64,14 @@ table de vérité, BDD)
 \secpieges
 
 \begin{itemize}
-    \item Ne pas centrer toute la leçon sur $NP$
+    \item Ne pas centrer toute la leçon sur $NP$.
     \item Faire une grosse partie sur les formes normales, leurs avantages
-        et leurs inconvénients (vitesse, conversion)
+        et leurs inconvénients (vitesse, conversion).
     \item Bien comparer les méthodes de résolution, leurs avantages et leurs
-        inconvénients (vitesse, certificat)
+        inconvénients (vitesse, certificat).
+        \item Différents livres peuvent avoir des notations 
+        différentes ($\neg T, \overline{T}$), rester cohérent.
+        \item Ne pas oublier les applications.
 \end{itemize}
 
 
@@ -80,28 +85,37 @@ table de vérité, BDD)
         possible ?
     \item Quel est l'algorithme pour résoudre HORNSAT en temps linéaire ?
         Quelles applications ?
-    \item Donner un exemple de formule pour laquelle de BDD est de taille
+    \item Donner un exemple de formule pour laquelle le BDD est de 
+    taille
         exponentielle.
-    \item Comparer la résolution, DPLL et les autres méthodes
+    \item Comparer la résolution, DPLL et les autres méthodes ?
 \end{itemize}
 
 \secreferences
 
 \begin{itemize}
-    \item \temporary{Goubault}
-    \item \temporary{Cori Lascar 1/2}
-    \item \temporary{Raffali}
-    \item \temporary{René Lalement} 
+    \item \input{refs/goubault}
+    \item \input{refs/corilascar}
+    \item \input{refs/david}
+    \item \input{refs/dowek}
+    
+%    \item \temporary{Goubault}
+%    \item \temporary{Cori Lascar 1/2}
+%    \item \temporary{Raffali}
+%    \item \temporary{René Lalement} 
 \end{itemize}
 
 \secdev
 
 \begin{itemize}
-    \item \temporary{Compacité du calcul propositionnel et application}
-    \item \temporary{2SAT est $NL$-complet et en temps linéaire sur une 
-        machine RAM}
-    \item \temporary{Complétude de la résolution propositionnelle}
-    \item \temporary{Théorème de Cook}
+%    \item \temporary{Compacité du calcul propositionnel et 
+%application}
+%%    \item \temporary{2SAT est $NL$-complet et en temps linéaire sur 
+%%une 
+%%        machine RAM}
+%    \item \temporary{Complétude de la résolution propositionnelle}
+
+    \item \input{dev/cook}
 \end{itemize}
 
 
