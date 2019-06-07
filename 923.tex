@@ -70,11 +70,18 @@
 % lex and yacc, LALR
 \item Peut-on comparer les parseurs LALR, LR, LL, SLR ? Si  des inclusions sont strictes, avez-vous des exemples ?
 % LALR < LR < SLR, LALR(j) incomparable avec LL(k)
-\item Quelles sont les applications de l'analyse lexicale et syntaxique ? Avez-vous un exemple où la complexité est critique ?
+\item Quelles sont les applications de l'analyse lexicale et 
+syntaxique ? Avez-vous un exemple où la complexité est critique ?
+% Compilations, notamment de page HTML (temps réel)
 \item Complexité d'une mise en forme normale ?
 % chomsky
 \item Pourquoi séparer l'analyse en deux étapes ?
+% Rend plus simple et efficace la conception de compilateurs. 
+%L'analyse lexicale est la seule à manipuler le texte, à partir de la 
+%syntaxique, on est indépendant des particularité du langage source.
 \item Pourquoi l'ambiguïté d'une grammaire est problématique ?
+% un programme doit avoir une unique interprétation
+
 \end{itemize}
 
 \secreferences

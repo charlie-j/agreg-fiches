@@ -70,14 +70,35 @@
 \begin{itemize}
     \item Définir un «~tri par comparaison~»~? Pourquoi certains tris sont linéaires
         alors qu'on possède une borne inférieure~?
+%     le résultat de l'algoritme ne dépend que de l'arbre de 
+%comparaison. Les tris sub linéaire utilisent des propriété en plus 
+%de 
+%l'entré, par exemple dans une plage borné.    
+        
     \item Savez vous quels tris sont utilisés par votre langage de programmation
         favori ?
+%         tim sort en python
     \item Quelles sont les complexités des opérations élémentaires que vous
         prenez ?
-    \item Quel tri utiliser en pratique en fonction de la taille des données ?
-    \item Donner quelques applications non-triviales du tri ? % recherche par dichotomie, pair d'entier les plus proches, frequence la plus eleve dans une liste, selection du k-ieme element, pair de point du plan les plus proches, enveloppe convexes
-    \item Pourquoi veut-on un tri stable ? Un tri en place ? Un tri en ligne ?
-    \item Comment améliorer le tri rapide pour qu'il soit optimal dans tous les cas ?
+% multiplication d'entier en O(n^log_2(3))  via karatsuba      
+    \item Quel tri utiliser en pratique en fonction de la taille des 
+    données ?
+%    radix sort si borné
+    \item Donner quelques applications non-triviales du tri ? % 
+    %recherche par dichotomie, pair d'entier les plus proches, 
+    %frequence la plus eleve dans une liste, selection du k-ieme 
+    %element, pair de point du plan les plus proches, enveloppe 
+    %convexes
+    \item Pourquoi veut-on un tri stable ? Un tri en place ? Un tri 
+    en ligne ?
+%    un tri stable => tri sur des tuples, pour chaque clé à la suite. 
+%Ex, tri par couleurs puis valeurs de carte, ou radix sort.  un tri 
+%en 
+%place = meilleur gestion de la 
+%meilleur
+    \item Comment améliorer le tri rapide pour qu'il soit optimal 
+    dans tous les cas ?
+%     médiane des médianes, inutile en pratique
 \end{itemize}
 
 \secreferences

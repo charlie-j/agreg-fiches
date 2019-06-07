@@ -1,6 +1,6 @@
 \documentclass{agregfiche}
 
-\title{Leçon 931 --  Schémas algorithmiques.  Exemples et applications.}
+\title{Leçon 931 - Schémas algorithmiques.  Exemples et applications.}
 
 \begin{document}
 
@@ -74,7 +74,13 @@ des algorithmes proposés et sur la question de leur complexité en espace.
 \secquestionsclassiques
 
 \begin{itemize}
-    \item Donner un exemple d'algorithme glouton et d'entrée sur laquelle la solution optimale est atteinte ? Une sur laquelle elle n'est pas atteinte ?
+    \item Donner un exemple d'algorithme glouton et d'entrée sur 
+    laquelle la solution optimale est atteinte ? Une sur laquelle 
+    elle n'est pas atteinte ?
+%     rendu de monnaie sur pièce de  : 1, 2, 5, 10, 20, 50,  est 
+%optimale. rendu de monnaie sur 1,3,4 non optimal (6 = 4 + 1 + 1, vs 
+%6 
+%= 3+3
     \item Quelle est la différence entre diviser pour régner et la programmation dynamique ?
 %    diviser pour régner = sous structure optimal
 %   dynamique = sous structure optimal +  chevauchement des sous problèmes.
@@ -84,8 +90,13 @@ des algorithmes proposés et sur la question de leur complexité en espace.
 %    1) algorithme simple et efficace, mais ne retournant pas toujours une solution optimale
 %   2) algorithme efficace, calcul simple de complexité, potentiellement parallélisable, mais stack overflow, et le choix du cas de base peux grandement changer la complexité. On résoud aussi potentiellement plusieurs fois le même problème.
 %   3) la mémoization évite le problème précédent, mais induit un coup mémoire plus grand, limite la parallélisation et augmente les coup d'accès mémoire.
-    \item Exemple de problème ne vérifiant pas la propriété de sous structure optimal ?
-    \item Certaines structure de données sont-elles plus pertinente que d'autres pour la mémoisation ?
+    \item Exemple de problème ne vérifiant pas la propriété de sous 
+    structure optimal ?
+%  ceux où on ne peut pas faire de diviser pour régner. Cchemin le 
+%plus long dans un graphe, SAT
+    \item Certaines structure de données sont-elles plus pertinente 
+    que d'autres pour la mémoisation ?
+%    table de hash et dictionnaire.
 \end{itemize}
 
 \secreferences

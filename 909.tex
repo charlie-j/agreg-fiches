@@ -72,14 +72,40 @@ le cadre de cette leçon.
 
 \secquestionsclassiques
 \begin{itemize}
-\item Comment tester le vide d'un automate ? Commenter tester l'acceptation d'un mot ? L'inclusion de langages ? L'égalité de langages ? Obtenir le complémentaire d'un language ? Complexités ? (attention aux inputs, regexp vs. $\mathcal{A}$ déterministe vs. $\mathcal{A}$ non déterministe)
+\item Comment tester le vide d'un automate ? Commenter tester 
+l'acceptation d'un mot ? L'inclusion de langages ? L'égalité de 
+langages ? Obtenir le complémentaire d'un language ? Complexités ? 
+(attention aux inputs, regexp vs. $\mathcal{A}$ déterministe vs. 
+$\mathcal{A}$ non déterministe)
+
+% calcul d'un  automate émondé = polynomial, éxécuter l'automate  
+%sur le mot = O(|A|·|w|) pour non det et O(|A|+ |w|) pour det, 
+% a inclusion b = a inter comp(b) = vide = pspace complet,  automate 
+%minimaux égaux = exp car determinisation, 
+%inverser état finaux
+
 \item Dur : Tester l'universalité d'une expression rationnel ?
+% p-space complet
 \item Automate dont le determinisé est en $2^{|Q|}$ ?
+% (a+b)*a(a+b)^n
 \item Quelle classe de complexité est reconnu par les automates ?
+% espace constant
 \item Comment prouver la minimalité d'un automate ?
+% Calcul des 
 \item Prouver que tel langage $X$ n'est pas régulier.
+%Lemme de pompage
 \item Coût d'élimination des $\epsilon$-transitions ?
-\item Avantages/inconvénients des constructions du théorème de  \bsc{Kleene} ?
+% cloture de relation reflexive transitive, O(Q^2)
+\item Avantages/inconvénients des constructions du théorème de  
+\bsc{Kleene} ?
+
+% Thompson => O(|E|^2)
+% Gluchkov => exactement |E| +1 état et au plusO(|E|^2) transitions
+% dérivé d'antimirov -=> au plus |E| +1 état
+% MC Naugthon yamada => proche de Floyd Warshall, dur à dérouler sur 
+%un exemple
+% BRZOZOWSKIet MCCLUSKEY => plus intuitive, plus aisé en pratique
+
 \end{itemize}
 
 \secreferences
