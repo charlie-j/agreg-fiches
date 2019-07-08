@@ -27,13 +27,13 @@ le cadre de cette leçon.
 \begin{itemize}
 \item  Définitions des automates finis et de la notion de langages reconnaissables. Exemples de languages reconnaissables.
 \item Définitions des expressions rationnelles et langages rationnels.
-\item Théorème de \bsc{Kleene}, connaître/mentionner les constructions pour la preuve (parmis \bsc{Thompson}, \bsc{Glushkov}, \bsc{Antimirov}, \bsc{McNaughton-Yamada}, \bsc{Brzozoswky-McCluskey}).
+\item Théorème de \bsc{Kleene}, connaître/mentionner les constructions pour la preuve (parmi \bsc{Thompson}, \bsc{Glushkov}, \bsc{Antimirov}, \bsc{McNaughton-Yamada}, \bsc{Brzozoswky-McCluskey}). Attention toutefois, Glushkov qui paraît simple n'est pas facilement trouvable dans les livres.
 \end{itemize}
 
 \secasavoir
 
 \begin{itemize}
-	\item Existence de langages non reconnaissables. Lemme de pompage. Exemples
+	\item Existence de langages non reconnaissables. Lemme de pompage. Exemples.
 	\item Applications, par exemple~: la compilation, la recherche de motif, le
 	model checking (et autres).
 	\item Accessibilité, Complétude, déterminisation, minimisation (\bsc{Nerode}).
@@ -48,11 +48,11 @@ le cadre de cette leçon.
 % to complete
 \begin{itemize}
 	\item Des questions de complexité.
-    \item Lemme d'\bsc{Arden}.
-	\item Divers algorithmes de minimisations (dur à faire en développement)
+        \item Lemme d'\bsc{Arden}.
+	\item Divers algorithmes de minimisation (dur à faire en développement)
 	\item Reconnaissance par monoïdes.
 	\item Lien avec les autres modèles de calcul (Boustrophédon, Machine de \bsc{Turing}.
-	qui n'écrivent pas sur leur entrée).
+          qui n'écrivent pas sur leur entrée).
 	\item Lien avec la logique (MSO).
 \end{itemize}
 
@@ -60,7 +60,7 @@ le cadre de cette leçon.
 \secpieges
 
 \begin{itemize}
-\item Si l'analyse lexical et de la compilation peuvent être un exemple d'application, ils ne doivent pas prendre une place prépondérante. Les automates à piles ne sont notamment pas au programme. On ne rentrera pas dans de nombreuses définitions pour les grammaires.
+\item Si l'analyse lexicale et la compilation peuvent être un exemple d'application, ils ne doivent pas prendre une place prépondérante. Les automates à piles ne sont notamment pas au programme. On ne rentrera pas dans de nombreuses définitions pour les grammaires.
 \item Cette leçon est basique et fondamentale, il faut très bien couvrir toutes les bases, et éviter de partir trop loin théoriquement.
 \item Réfléchir à la complexité.
 \item Éviter  \bsc{McNaughton-Yamada}, qui est infaisable sur un exemple.
@@ -72,17 +72,18 @@ le cadre de cette leçon.
 
 \secquestionsclassiques
 \begin{itemize}
-\item Comment tester le vide d'un automate ? Commenter tester 
-l'acceptation d'un mot ? L'inclusion de langages ? L'égalité de 
-langages ? Obtenir le complémentaire d'un language ? Complexités ? 
-(attention aux inputs, regexp vs. $\mathcal{A}$ déterministe vs. 
+\item Comment tester le vide d'un automate ? Commenter tester
+l'acceptation d'un mot ? L'inclusion de langages ? L'égalité de
+langages ? Obtenir le complémentaire d'un language ? Complexités ?
+(attention aux inputs, regexp vs. $\mathcal{A}$ déterministe vs.
 $\mathcal{A}$ non déterministe)
 
-% calcul d'un  automate émondé = polynomial, éxécuter l'automate  
-%sur le mot = O(|A|·|w|) pour non det et O(|A|+ |w|) pour det, 
-% a inclusion b = a inter comp(b) = vide = pspace complet,  automate 
-%minimaux égaux = exp car determinisation, 
-%inverser état finaux
+% calcul d'un  automate émondé = polynomial, exécuter l'automate
+%sur le mot = O(|A|·|w|) pour non det et O(|A|+ |w|) pour det,
+% a inclusion b = a inter comp(b) = vide = pspace complet,  automate
+%minimaux égaux = exp car determinisation,
+%inverser état finaux, Y a-t-il un AFD complet avec un nombre d'états <= k
+%reconnaissant le même langage que A AFN donné en entrée ? = NP-Complet.
 
 \item Dur : Tester l'universalité d'une expression rationnel ?
 % p-space complet
@@ -91,18 +92,18 @@ $\mathcal{A}$ non déterministe)
 \item Quelle classe de complexité est reconnu par les automates ?
 % espace constant
 \item Comment prouver la minimalité d'un automate ?
-% Calcul des 
+% Calcul des résiduels
 \item Prouver que tel langage $X$ n'est pas régulier.
 %Lemme de pompage
 \item Coût d'élimination des $\epsilon$-transitions ?
 % cloture de relation reflexive transitive, O(Q^2)
-\item Avantages/inconvénients des constructions du théorème de  
+\item Avantages/inconvénients des constructions du théorème de
 \bsc{Kleene} ?
 
 % Thompson => O(|E|^2)
-% Gluchkov => exactement |E| +1 état et au plusO(|E|^2) transitions
+% Glushkov => exactement |E| +1 état et au plus O(|E|^2) transitions
 % dérivé d'antimirov -=> au plus |E| +1 état
-% MC Naugthon yamada => proche de Floyd Warshall, dur à dérouler sur 
+% MC Naugthon yamada => proche de Floyd Warshall, dur à dérouler sur
 %un exemple
 % BRZOZOWSKIet MCCLUSKEY => plus intuitive, plus aisé en pratique
 
@@ -123,6 +124,7 @@ $\mathcal{A}$ non déterministe)
 \item \input{dev/autom_occur}
 \item \input{dev/nerode}
 \item \input{dev/lemetoile}
+\item \input{dev/Aho-Corasick}
 
 \end{itemize}
 
