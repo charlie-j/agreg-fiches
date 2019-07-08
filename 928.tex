@@ -8,25 +8,25 @@
 
 \secrapports
 \begin{rapport}{2018}
-    L’objectif ne doit pas être de dresser un catalogue le plus 
+    L’objectif ne doit pas être de dresser un catalogue le plus
     exhaustif possible ; en revanche, pour chaque
-    exemple, il est attendu que le candidat puisse au moins expliquer 
+    exemple, il est attendu que le candidat puisse au moins expliquer
     clairement le problème considéré, et
-    indiquer de quel autre problème une réduction permet de prouver 
+    indiquer de quel autre problème une réduction permet de prouver
     sa NP-complétude.
-    Les exemples de réduction polynomiale seront autant que possible 
+    Les exemples de réduction polynomiale seront autant que possible
     choisis dans des domaines variés :
-    graphes, arithmétique, logique, etc. Si les dessins sont les 
+    graphes, arithmétique, logique, etc. Si les dessins sont les
     bienvenus lors du développement, le jury
-    attend une définition claire et concise de la fonction associant, 
+    attend une définition claire et concise de la fonction associant,
     à toute instance du premier problème,
-    une instance du second ainsi que la preuve rigoureuse que cette 
+    une instance du second ainsi que la preuve rigoureuse que cette
     fonction permet la réduction choisie
-    et que les candidats sachent préciser comment sont représentées 
+    et que les candidats sachent préciser comment sont représentées
     les données.
-    Un exemple de problème NP-complet dans sa généralité qui devient 
+    Un exemple de problème NP-complet dans sa généralité qui devient
     P si on contraint davantage les
-    hypothèses pourra être présenté, ou encore un algorithme P 
+    hypothèses pourra être présenté, ou encore un algorithme P
     approximant un problème NP-complet.
 \end{rapport}
 
@@ -42,16 +42,16 @@
 
 \begin{itemize}
     \item Acceptation par certificat.
-	\item 3-SAT, 2-SAT, HORNSAT. Mise en forme normal (CNF, DNF).
+    \item 3-SAT, 2-SAT, HORNSAT. Mise en forme normal (CNF, DNF).
     \item INDSET, COVER, Cycle Hamiltoniens, Voyageur de commerce.
     \item Somme sous ensemble, programmation entière.
-    
+
 \end{itemize}
 
 \secidees
 
 \begin{itemize}
-	\item Algorithme d'approximation (par exemple sur le voyageur du 
+	\item Algorithme d'approximation (par exemple sur le voyageur du
     commerce).
     \item Réduction d'un problème \NP\ devenant \P.
     \item SAT-solver.
@@ -60,39 +60,39 @@
 \secpieges
 
 \begin{itemize}
-	\item Il \textbf{faut} être précis sur la définition de \NP\ : ce 
-	n'est 
-	pas juste les machines non déterministes fonctionnant en temps 
-	polynomial. Pour une 
-	entrée, est-ce que la TM doit terminer pour tout chemin ? Est-ce 
-	qu'il faut juste qu'il existe un chemin qui termine ? Est-ce 
+	\item Il \textbf{faut} être précis sur la définition de \NP\ : ce
+	n'est
+	pas juste les machines non déterministes fonctionnant en temps
+	polynomial. Pour une
+	entrée, est-ce que la TM doit terminer pour tout chemin ? Est-ce
+	qu'il faut juste qu'il existe un chemin qui termine ? Est-ce
 	qu'il faut juste qu'il existe un chemin acceptant qui termine ?
-    \item C'est dur d'éviter le côté catalogue. Essayer de varier les 
-    domaines, d'avoir des dessins et des exemples de problèmes. Le 
+    \item C'est dur d'éviter le côté catalogue. Essayer de varier les
+    domaines, d'avoir des dessins et des exemples de problèmes. Le
     plus possible, donner précisément la définition des problèmes.
-    \item Dans le développements, il faut absolument avoir des 
+    \item Dans le développement, il faut absolument avoir des
     dessins \underline{et} que tout soit formel.
 \end{itemize}
 
 \secquestionsclassiques
 
 \begin{itemize}
-	\item Quelle est l'intuition derrière \NP? 
+	\item Quelle est l'intuition derrière \NP?
     \item Pourquoi \P=\NP est une question centrale ?
-    \item En quoi les problèmes \NP sont difficile ?
-    \item Telle et telle définitions d'acceptation pour une machine 
+    \item En quoi les problèmes \NP sont difficiles ?
+    \item Telle et telle définition d'acceptation pour une machine
     de \bsc{Turing} non déterministe sont-elles équivalentes ?
-    \item Que se passe-t-il si on considère des réductions polynomial 
-    non déterministe ?
-    \item Que se passe-t-il si on considère des réductions en espace 
+    \item Que se passe-t-il si on considère des réductions polynomiales
+    non déterministes ?
+    \item Que se passe-t-il si on considère des réductions en espace
     logarithmique ?
-    \item Justifier que \NP\ est close par réduction polynomial.
-    \item Connaissez-vous un SAT solver ? Utilisé en pratique pour 
+    \item Justifier que \NP\ est close par réduction polynomiale.
+    \item Connaissez-vous un SAT solver ? Utilisé en pratique pour
     quoi ?
     \item Pouvez-vous donner l'idée/les détails de cette réduction ?
     \item Montrer que
 \[
-            L = \left\{ (M, x, 1^t) ~|~ \langle M, x \rangle \text{ 
+            L = \left\{ (M, x, 1^t) ~|~ \langle M, x \rangle \text{
             termine en
                 temps  }\leq t, \text{pour }M \text{ non déterministe}
             \right\}
@@ -106,16 +106,17 @@ est \NP-complet.
 \begin{itemize}
     \item \input{refs/perifel}
 \item \input{refs/carton}
-\textit{La $NP$-complétude de HamPATH est fausse dedans.}
+\textit{La $NP$-complétude de HamPATH est fausse dedans, regarder le \bsc{Kleinberg}}
 \item \input{refs/arorabarak}
-\item Éviter le \bsc{Papadimitriou}, qui contient de très nombreuses 
-fausses preuves.
+\item Éviter le \bsc{Papadimitriou}, qui contient de très nombreuses
+  fausses preuves.
+\item \input{refs/kleinberg}
 \end{itemize}
 
 \secdev
 
 \begin{itemize}
-    \item \input{dev/cook}
+\item \input{dev/cook}
 \item Preuve de \NP-complétude d'un problème au choix.
 \end{itemize}
 
