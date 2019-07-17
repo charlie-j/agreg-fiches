@@ -1,0 +1,10 @@
+language: c
+compiler:
+- gcc
+before_install:
+- sudo apt-get update -qq
+- sudo apt-get install -qq -y texlive texlive-lang-french  texlive-latex-recommended  texlive-latex-extra texlive-science poppler-utils
+script: make all
+# deployment:
+after_success:
+- ./check-pages.sh

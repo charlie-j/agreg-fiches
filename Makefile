@@ -29,4 +29,3 @@ clean:
 	rm -f builds/*.log
 	rm -f *.synctex.gz
 	rm -f builds/*.synctex.gz
-
