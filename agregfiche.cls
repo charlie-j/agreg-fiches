@@ -46,7 +46,10 @@
  }
 
 % \dev{Nom du Dev}{IDref}{p. 432}{lecon1,lecon2,lecon3}{Commentaires}
-\newcommand{\dev}[5]{ #1 - (#2,\textit{ \small{#3}}) - #4 
+\newcommand{\dev}[5]{ #1 - (#2\ifthenelse{\isempty{#3}}%
+{}% if #3 is empty
+{,\textit{ \small{#3}}}% if #3 is not empty 
+) - #4 
  \ifthenelse{\isempty{#5}}%
 {}% if #5 is empty
 {
