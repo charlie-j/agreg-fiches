@@ -5,7 +5,7 @@
 % Relu par Thomas Chatin
 
 
-\title{Leçon 925 -- Graphes : représentations et algorithmes.} 
+\title{Leçon 925 -- Graphes : représentations et algorithmes.}
 
 \begin{document}
 
@@ -23,22 +23,22 @@ Cette leçon offre une grande liberté de choix au candidat, qui peut décider d
 
 \begin{itemize}
     \item Représentations des graphes, complexités des opérations élémentaires.
-	\item Parcours en largeur et en profondeurs.
+    \item Parcours en largeur et en profondeur.
     \item Plus courts chemins, Dijkstra.
 \end{itemize}
 
 \secasavoir
 \begin{itemize}
-    \item Plus courts chemins, Floyad Warshall, Bellman Ford.
-   	\item Arbres couvrants, Prim, Kruskal.
+    \item Plus courts chemins, Floyd Warshall, Bellman Ford.
+    \item Arbres couvrants, Prim, Kruskal.
     \item Fermeture transitive d'une relation. (notamment par adaptation de Floyd Warshall)
     \end{itemize}
 \secidees
 
 \begin{itemize}
-	\item Algorithmes de composantes connexes (Kozaraju, Tarjan)
-    \item Cycle eulérien, hamiltoniens. 
-	\item Problèmes de flots.
+    \item Algorithmes de composantes connexes (Kozaraju, Tarjan)
+    \item Cycle eulérien, hamiltoniens.
+    \item Problèmes de flots.
     \item Lien avec la complexité et la $NP$-complétude.
 \end{itemize}
 
@@ -58,10 +58,12 @@ Cette leçon offre une grande liberté de choix au candidat, qui peut décider d
 
 \begin{itemize}
     \item Exemple d'application de la détection de cycle, de flots, de ... ?
-    \item Pourquoi les graphes sont-ils si important ?
+    \item Pourquoi les graphes sont-ils si importants ?
     \item Dérouler tel algorithme sur tel exemple.
-    \item Qu'est-ce qui peut influencer le choix entre les différents algorithme de plus court chemins.
+    \item Qu'est-ce qui peut influencer le choix entre les différents algorithmes de plus courts chemins.
     \item Est-ce que le choix de la représentation influe fortement sur la complexité en espace des algorithmes ?
+    \item Donner un exemple d'application des tris topologiques ?
+      % Gestion des dépendances dans le programme Make par exemple.
 \end{itemize}
 
 \secreferences
@@ -69,7 +71,7 @@ Cette leçon offre une grande liberté de choix au candidat, qui peut décider d
 \begin{itemize}
     \item \input{refs/cormen}
     \item \input{refs/beauquier}
-%    \item Dalpagusta 
+%    \item Dalpagusta
 \end{itemize}
 
 \secdev
@@ -77,6 +79,8 @@ Cette leçon offre une grande liberté de choix au candidat, qui peut décider d
 \begin{itemize}
 	\item \input{dev/dijkstra}
 	\item \input{dev/primkruskal}
+        \item \input{dev/2SAT}
+          \textit{Bien insister sur les algorithmes de graphes utilisés (Kosaraju par exemple), et bien justifier que le temps reste linéaire en la taille de la formule.}
 \end{itemize}
 
 \end{document}

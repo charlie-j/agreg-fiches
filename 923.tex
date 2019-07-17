@@ -30,14 +30,14 @@
 	\item Grammaires et Langages algébriques. Existence de langages non algébriques (Lemme d'\bsc{Ogden}). Propriétés de clôture
     des langages algébriques.
     \item Chaîne de compilation. Analyse lexicale. Analyse syntaxique (principes de l’analyse descendante
-    et ascendante). 
+    et ascendante).
 \end{itemize}
 
 \secasavoir
 
 \begin{itemize}
     \item Formes normales. (quadratique, \bsc{Chomsky}, \bsc{Greibach})
-	\item Automate à pile et équivalence avec les langages algébriques.
+    \item Automate à pile et équivalence avec les langages algébriques.
     \item Analyse sémantique \underline{élémentaire} (arbre de syntaxe abstraite, table des symboles,
     analyse de portée, typage, ...).
     \item Grammaires LL ou LR
@@ -47,7 +47,7 @@
 \secidees
 
 \begin{itemize}
-	\item LALR ou SLR
+    \item LALR ou SLR
     \item Problèmes de décision des langages algébriques. Décidabilité et complexité.
     \item Langages de pile.
     \item Hiérarchie de \bsc{Chomsky}.
@@ -57,8 +57,8 @@
 
 \begin{itemize}
     \item Des DESSINS, de la chaîne de compilation, d'arbre de dérivation, d'automate, de règles de grammaires,...
-    \item Mettre des exemples. Bien s'entraîner à faire tourner les algorithmes sur des exemples (notamment pour l'analyse lexical)
-	\item Attention à ne pas trop se perdre sur certain théorique. On peut notamment se perdre et ne pas savoir répondre aux questions autour des parseurs LL, LR, LALR et SLR. 
+    \item Mettre des exemples. Bien s'entraîner à faire tourner les algorithmes sur des exemples (notamment pour l'analyse lexicale)
+	\item Attention à ne pas trop se perdre sur certaines notions. On peut notamment se perdre et ne pas savoir répondre aux questions autour des parseurs LL, LR, LALR et SLR.
     \item En pratique, yacc est LALR, mais par exemple, le langage pascal est LL(1)
 
 \end{itemize}
@@ -66,18 +66,18 @@
 \secquestionsclassiques
 
 \begin{itemize}
-	\item Qu'utilisent en pratique les programmeurs pour écrire des parseurs ? Quelle type de grammaire est reconnu par ces outils ?
+	\item Qu'utilisent en pratique les programmeurs pour écrire des parseurs ? Quelle type de grammaire est reconnue par ces outils ?
 % lex and yacc, LALR
 \item Peut-on comparer les parseurs LALR, LR, LL, SLR ? Si  des inclusions sont strictes, avez-vous des exemples ?
 % LALR < LR < SLR, LALR(j) incomparable avec LL(k)
-\item Quelles sont les applications de l'analyse lexicale et 
+\item Quelles sont les applications de l'analyse lexicale et
 syntaxique ? Avez-vous un exemple où la complexité est critique ?
 % Compilations, notamment de page HTML (temps réel)
 \item Complexité d'une mise en forme normale ?
 % chomsky
 \item Pourquoi séparer l'analyse en deux étapes ?
-% Rend plus simple et efficace la conception de compilateurs. 
-%L'analyse lexicale est la seule à manipuler le texte, à partir de la 
+% Rend plus simple et efficace la conception de compilateurs.
+%L'analyse lexicale est la seule à manipuler le texte, à partir de la
 %syntaxique, on est indépendant des particularité du langage source.
 \item Pourquoi l'ambiguïté d'une grammaire est problématique ?
 % un programme doit avoir une unique interprétation
@@ -89,6 +89,7 @@ syntaxique ? Avez-vous un exemple où la complexité est critique ?
 \begin{itemize}
 \item \input{refs/carton}
 \item \input{refs/aho}
+\item \input{refs/schwarzentruber}
 \end{itemize}
 
 \secdev

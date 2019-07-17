@@ -21,10 +21,10 @@
 \secindispensables
 
 \begin{itemize}
-	\item Des \textbf{exemples}, partout, pour tout. (somme finie, produit fini, factorielle, conditionnelles...) 
+	\item Des \textbf{exemples}, partout, pour tout. (somme finie, produit fini, factorielle, conditionnelles...)
 	\item Définitions des fonctions primitives récursives de bases, primitives récursives et non-primitives récursives ($\mu$-récursives, i.e avec minimisation non bornée).
 	\item Prédicats primitifs et fonctions caractéristiques. Minimisation bornée.
-  
+
 \end{itemize}
 
 \secasavoir
@@ -38,54 +38,63 @@
 \secidees
 
 \begin{itemize}
-	\item Lien avec le $\lambda$-calcul.
-	\item Hiérarchie de \bsc{Grzegorczyk} (si vous savez le motiver de manière convaincante)
-	\item Théorème d'itération ($s_{mn}$), borderline.
+       \item Lien avec le $\lambda$-calcul.
+       \item Élimination de la récursion primitive.
+       \item Hiérarchie de \bsc{Grzegorczyk} (si vous savez le motiver de manière convaincante)
+       \item Théorème d'itération ($s_{mn}$), borderline.
 \end{itemize}
 
 \secpieges
 
 \begin{itemize}
     \item Bien réfléchir et insister sur les motivations.
-	\item Mettre des exemples intéressants.
+    \item Mettre des exemples intéressants.
     \item Faire des liens avec les constructions des langages de programmation.
-	\item Ne pas définir les fonctions récursives primitives autrement que à partir de celle de bases.
-    \item Ne pas se tromper sur la définition de la minimisation. Le bug standard est de seulement dire que sur $f$, le but est de retourner le premier $n$ tel que $f(n) \neq 0$. Avec cette définition, on peux résoudre le problème de l'arrêt... Il faut aussi préciser que l'on renvoi ce $n$ uniquement si la fonction répond (et donc termine) sur les entrées précédentes.
+    \item Ne pas définir les fonctions récursives primitives autrement que à partir de celle de bases.
+    \item Ne pas se tromper sur la définition de la minimisation. Le bug standard est de seulement dire que sur $f$, le but est de retourner le premier $n$ tel que $f(n) \neq 0$. Avec cette définition, on peux résoudre le problème de l'arrêt... Il faut aussi préciser que l'on renvoie ce $n$ uniquement si la fonction répond (et donc termine) sur les entrées précédentes.
     \item Utiliser des exemples pour souligner le pouvoir expressif, et son évolution.
 \end{itemize}
 
 \secquestionsclassiques
 
 \begin{itemize}
-	\item Pourquoi considérer les fonctions récursive primitives ? % raison historique avec leur introduction par Godel pour son premier théorème d'incomplétude. Elles correspondent assez bien à la définition de la récursion dans les langages de programmation, et permettent de bien mettre en évidence la différence d'expressivité entre FOR et WHILE (ce qui est moins clair sur les TM). Enfin, c'est naturel pour tout ce qui est calcul sur les entiers, qui permettent cela dit d'encoder beaucoup de choses.
-	\item Différence entre la récursion définit ici et celle des langages de programmation.
-    \item Quelle construction capture la boucle FOR ? La boucle WHILE 
-    ?
-%    minimisation borné ou non 
-	\item L'encodage d'un problème est-il toujours calculable ? 
-	Pourquoi sont définis ainsi les fonctions récursives primitives 
-	de bases ?
-%     si on encode les machines de turing via (M,b) où b vaut 1 si la 
-%machine s'arrete, on a des problèmes...
+	\item Pourquoi considérer les fonctions récursive primitives ? % raison historique avec leur introduction par Gödel pour son premier théorème d'incomplétude. Elles correspondent assez bien à la définition de la récursion dans les langages de programmation, et permettent de bien mettre en évidence la différence d'expressivité entre FOR et WHILE (ce qui est moins clair sur les TM). Enfin, c'est naturel pour tout ce qui est calcul sur les entiers, qui permettent cela dit d'encoder beaucoup de choses.
+	\item Différence entre la récursion définie ici et celle des langages de programmation.
+        \item Quelle construction capture la boucle FOR ? La boucle WHILE
+          ?
+          % minimisation borné ou non
+	\item L'encodage d'un problème est-il toujours calculable ?
+          Pourquoi sont définis ainsi les fonctions récursives primitives
+          de bases ?
+          % si on encode les machines de turing via (M,b) où b vaut 1 si la
+          % machine s'arrete, on a des problèmes...
 	\item Exemple d'argument diagonal.
     \item Peut-on décider si une fonction récursive est primitive ?
 	\item Montrer que telle fonction est primitive récursive.
-    \item Quelles est la classe de machines de \bsc{Turing} équivalent aux fonctions récursives primitives ? % les machines en temps primitifs récursifs. Il suffit de mettre un timeout. Tout ce qui est calculable avec une complexité pas trop grande est en fait récursif primitif via time out !
-    \item Pour tous problèmes ayant une complexité raisonnable, 
-    est-ce que le FOR suffit pour les décider ?	
-%    cf au dessus, oui
-\item Pouvez-vous calculer Ack(1,x), Ack(2,x) et Ack(3,x) ?
-\item À quoi sert la fonction d'\bsc{Ackermann} ? Quelle partie de sa 
-construction la rend non primitive ?
-% à montrer les limites des fonctions récursives primitives, qui 
-%n'est pas équivalent à Turing. Double récursion imbriqué.
-\item Connaissez-vous les fonctions récursives élémentaires ? La 
-classe de complexité associée ? Est-ce aussi expressif que les 
-primitives récursives ?
-Savez-vous définir la minimisation borné à partir de produit, 
-différence et somme bornée ?
-% def sans shema recursif, que somme et produit borné. ELEMENTARY. la 
-%tétration est PR mais pas ELEMENTARY. 
+    \item À quoi sert la fonction d'Ackermann ?  Quelle partie de sa 
+    construction la rend non primitive ? Calculer ses premières 
+    valeurs. Exemple d'utilisation de sa 
+    réciproque. 
+      % Hierarchie des fonctions PR. Double récursion imbriqué. 
+      %complexité Union-Find.
+    \item Quelle est la classe de machines de \bsc{Turing} équivalent 
+    aux fonctions récursives primitives ? % les machines en temps 
+    %primitifs récursifs. Il suffit de mettre un timeout. Tout ce qui 
+    %est calculable avec une complexité pas trop grande est en fait 
+    %récursif primitif via time out !
+    \item Pour tous problèmes ayant une complexité raisonnable,
+      est-ce que le FOR suffit pour les décider ?
+      % cf au dessus, oui
+      
+      \item Connaissez-vous les fonctions récursives élémentaires ? 
+      La 
+      classe de complexité associée ? Est-ce aussi expressif que les 
+      primitives récursives ?
+      Savez-vous définir la minimisation bornée à partir de produits 
+      et sommes bornées ?
+      % def sans shema recursif, que somme et produit borné. 
+      %ELEMENTARY. la 
+      %tétration est PR mais pas ELEMENTARY. 
 
 \end{itemize}
 
@@ -94,6 +103,8 @@ différence et somme bornée ?
 \begin{itemize}
 \item \input{refs/wolper}
 \item \input{refs/carton}
+\item \input{refs/corilascar}
+\item \input{refs/dowek}
 \end{itemize}
 
 \secdev

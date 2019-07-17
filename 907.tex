@@ -40,22 +40,22 @@
 \begin{itemize}
 	\item L'algorithme de \bsc{Karp-Rabin}
 	\item Automate de \bsc{Simon}
-	\item Regarder KMP sous l'angle des structure de données 
+	\item Regarder KMP sous l'angle des structures de données
 	ou de l'algorithme (automate de \bsc{Simon})
-	\item 
-	On peut aussi parler de compression de texte et codes 
+	\item
+	On peut aussi parler de compression de texte et codes
 	correcteurs, mais bien attention à rester dans la leçon.
-	\item 
+	\item
 	Parler des structures (automates, \bsc{Aho-Corasick}, \bsc{Simon},
 	Suffix Tree, Suffix Trie, Suffix Array, Prefix Trie).
-	
-	\item Recherche approximative de motif approximative
+
+	\item Recherche approximative de motif.
 \end{itemize}
 
 \secpieges
 
 \begin{itemize}
-    \item Bien préciser quels sont les problèmes qu'on cherche 
+    \item Bien préciser quels sont les problèmes qu'on cherche
         à résoudre, les entrées, et les complexités des algorithmes.
 
     \item La taille de l'alphabet est un paramètre de la complexité.
@@ -63,7 +63,7 @@
     \item Les dessins, c'est bien.
 
     \item Organiser de manière pédagogique les algorithmes.
-        Cela peut vouloir dire par ``problème", par ``méthode", ou 
+        Cela peut vouloir dire par ``problème", par ``méthode", ou
         bien par ``complexité".
 
     \item L'analyse lexicale et syntaxique doit être évitée, bien que techniquement
@@ -75,23 +75,24 @@
 
 \begin{itemize}
     \item Quel algorithme est utilisé par Grep ?
-%     Aho-coraszcik
+      % Aho-corasick
     \item Faire la table de bordure de tel motif.
     \item Calculer l'automate des occurrences et le faire tourner sur un exemple.
     \item Donner un exemple de pire des cas pour les différents algorithmes.
     \item Pourquoi est-ce que l'automate de Simon possède un nombre linéaire
-        d'arc retours ? Est-il minimal ?
-    \item Quelle algorithm vaut-il mieux utiliser pour rechercher 
-    plusieurs motifs dans un même texte ?
-%    karp-rabin
+      d'arc retours ? Est-il minimal ?
+    \item Quel algorithme vaut-il mieux utiliser pour rechercher
+      plusieurs motifs dans un même texte ?
+      % karp-rabin ou Aho-Corasik
 \end{itemize}
 
 \secreferences
 
 \begin{itemize}
     \item \input{refs/crochemore}
-\item \input{refs/stringology}
-\item \input{refs/handbook}
+    \item \input{refs/stringology}
+    \item \input{refs/handbook}
+    \item \input{refs/beauquier}
 \end{itemize}
 
 \secdev
@@ -99,10 +100,10 @@
 \begin{itemize}
     \item \input{dev/autom_occur}
     \item \input{dev/plsc}
+    \item \input{dev/Aho-Corasick}
+    \item \input{dev/DistanceEdition}
 %    \item \temporary{CYK}
 %    \item \temporary{KMP}
-%    \item \temporary{Aho-Corasick}
-%    \item \temporary{Distance d'édition}
 \end{itemize}
 
 

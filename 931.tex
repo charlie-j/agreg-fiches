@@ -48,7 +48,7 @@ des algorithmes proposés et sur la question de leur complexité en espace.
 \secasavoir
 
 \begin{itemize}
-    \item Des exemples moins classiques (Prim ou Kruskal, Hopcroft ou Karatsuba ou recherche de pair de points les plus proches ou FFT, multiplication de plusieurs matrices ou CYK,...  )
+    \item Des exemples moins classiques (Prim ou Kruskal, Hopcroft ou Karatsuba ou recherche de paires de points les plus proches ou FFT, multiplication de plusieurs matrices ou CYK,...  )
     \item Approche ascendante et descendante de la programmation dynamique.
     \item Calcul de complexité par formule de récurrence.
     \item Complexité en espace.
@@ -68,33 +68,33 @@ des algorithmes proposés et sur la question de leur complexité en espace.
     \item Présenter les trois schémas et un unique exemple simple pour chacun risque de faire un plan peu intéressant, il faut probablement creuser l'un des schémas.
     \item On ne doit pas voir un catalogue de schémas et d'algorithme. Il faut absolument justifier les enchaînements, et les forces et faiblesses relative entre les différents paradigmes.
     \item Il faut maîtriser les ouvertures liés aux différents algorithmes présentés (prouver la correction, prouver la complexité, détails d'implémentation, est-ce le meilleur algorithme pour faire cela ?,\ldots).
-    
+
 \end{itemize}
 
 \secquestionsclassiques
 
 \begin{itemize}
-    \item Donner un exemple d'algorithme glouton et d'entrée sur 
-    laquelle la solution optimale est atteinte ? Une sur laquelle 
+    \item Donner un exemple d'algorithme glouton et d'entrée sur
+    laquelle la solution optimale est atteinte ? Une sur laquelle
     elle n'est pas atteinte ?
-%     rendu de monnaie sur pièce de  : 1, 2, 5, 10, 20, 50,  est 
-%optimale. rendu de monnaie sur 1,3,4 non optimal (6 = 4 + 1 + 1, vs 
-%6 
+%     rendu de monnaie sur pièce de  : 1, 2, 5, 10, 20, 50,  est
+%optimale. rendu de monnaie sur 1,3,4 non optimal (6 = 4 + 1 + 1, vs
+%6
 %= 3+3
     \item Quelle est la différence entre diviser pour régner et la programmation dynamique ?
 %    diviser pour régner = sous structure optimal
 %   dynamique = sous structure optimal +  chevauchement des sous problèmes.
-    \item Quelle est le lien entre la programmation dynamique et la mémoisation ?
-%   mémoisation est un sous cas de la pro dynamique.
+    \item Quelle est le lien entre la programmation dynamique et la mémoisation ? Quelles en sont les différences ?
+      % mémoisation est un sous cas de la pro dynamique. En mémoïsant on a une approche top down alors qu'en programmation dynamique classique on a une approche bottom up.
     \item Avantages et désavantages de l'approche gloutonne ? De diviser pour régner, de la programmation dynamique ?
 %    1) algorithme simple et efficace, mais ne retournant pas toujours une solution optimale
 %   2) algorithme efficace, calcul simple de complexité, potentiellement parallélisable, mais stack overflow, et le choix du cas de base peux grandement changer la complexité. On résoud aussi potentiellement plusieurs fois le même problème.
-%   3) la mémoization évite le problème précédent, mais induit un coup mémoire plus grand, limite la parallélisation et augmente les coup d'accès mémoire.
-    \item Exemple de problème ne vérifiant pas la propriété de sous 
+%   3) la mémoïsation évite le problème précédent, mais induit un coup mémoire plus grand, limite la parallélisation et augmente les coup d'accès mémoire.
+    \item Exemple de problème ne vérifiant pas la propriété de sous
     structure optimal ?
-%  ceux où on ne peut pas faire de diviser pour régner. Cchemin le 
+%  ceux où on ne peut pas faire de diviser pour régner. Cchemin le
 %plus long dans un graphe, SAT
-    \item Certaines structure de données sont-elles plus pertinente 
+    \item Certaines structure de données sont-elles plus pertinentes
     que d'autres pour la mémoisation ?
 %    table de hash et dictionnaire.
 \end{itemize}
@@ -104,6 +104,7 @@ des algorithmes proposés et sur la question de leur complexité en espace.
 \begin{itemize}
     \item \input{refs/cormen}
     \item \input{refs/beauquier}
+    \item \input{refs/kleinberg}
 \end{itemize}
 
 \secdev
@@ -111,6 +112,9 @@ des algorithmes proposés et sur la question de leur complexité en espace.
 \begin{itemize}
     \item \input{dev/plsc}
     \item \input{dev/tri_rapide}
+    \item \input{dev/primkruskal}
+      \textit{\\Bien insister sur le caractère glouton dans cette leçon}
+    \item Exemple d'algorithme d'approximation utilisant une approche gloutonne.
 \end{itemize}
 
 
