@@ -8,16 +8,16 @@
 
 \secrapports
 \begin{rapport}{2018}
-    Le cœur de cette nouvelle leçon concerne les fondements 
+    Le cœur de cette nouvelle leçon concerne les fondements
     théoriques des bases de données relationnelles :
-    présentation du modèle relationnel, approches logique et 
+    présentation du modèle relationnel, approches logique et
     algébrique des langages de requêtes, liens entre
     ces deux approches.
-    Le candidat pourra ensuite orienter la leçon et proposer des 
-    développements dans des directions diverses : complexité de 
-    l’évaluation des requêtes, expressivité 
-    des langages de requête, requêtes récursives, contraintes 
-    d’intégrité, aspects concernant la conception 
+    Le candidat pourra ensuite orienter la leçon et proposer des
+    développements dans des directions diverses : complexité de
+    l’évaluation des requêtes, expressivité
+    des langages de requête, requêtes récursives, contraintes
+    d’intégrité, aspects concernant la conception
     et l’implémentation, optimisation de
     requêtes...
 \end{rapport}
@@ -25,17 +25,17 @@
 \secindispensables
 
 \begin{itemize}
-	\item  modèle relationnel, algèbre relationnelle, calcul 
-	relationnel.
+    \item  modèle relationnel, algèbre relationnelle, calcul
+      relationnel.
     \item théorème de \bsc{Codd}.
 \end{itemize}
 
 \secasavoir
 
 \begin{itemize}
-	\item Calcul conjonctif.
-    \item Indécidabilité de la satisfiabilité (\bsc{Trakhtenbrot}). 
-    De l'indépendance de domaine.
+    \item Calcul conjonctif.
+    \item Indécidabilité de la satisfiabilité (\bsc{Trakhtenbrot}).
+      De l'indépendance de domaine.
 \end{itemize}
 
 \secidees
@@ -43,7 +43,7 @@
 \begin{itemize}
     \item Minimisation.
     \item Expressivité, limites et extensions.
-	\item Dépendances fonctionnelles et contraintes d'intégrité. 
+    \item Dépendances fonctionnelles et contraintes d'intégrité.
 	Système d'\bsc{Armstrong}.
     \item Implémentations (B-arbres).
     \item Complexité.
@@ -52,11 +52,11 @@
 \secpieges
 
 \begin{itemize}
-	\item Il ne suffit pas d'écrire les définitions. Il faut 
-	comprendre leur liens avec les objets manipulé en pratique. 
+    \item Il ne suffit pas d'écrire les définitions. Il faut
+	comprendre leur liens avec les objets manipulé en pratique.
     \item Donner des exemples de BDD, de requêtes, de résultats.
-    \item Pour arriver au théorème de \bsc{Codd}, il faut beaucoup de 
-    définitions, essayez d'alléger le tout avec des exemples, des 
+    \item Pour arriver au théorème de \bsc{Codd}, il faut beaucoup de
+    définitions, essayez d'alléger le tout avec des exemples, des
     remarques, des dessins.
 \end{itemize}
 
@@ -64,16 +64,16 @@
 
 \begin{itemize}
     \item Quelle est l'intérêt des bases de données relationnelles ?
-	\item Donner une exemple de requête non domaine indépendante. 
+    \item Donner un exemple de requête non domaine indépendante.
 	Donner deux BDD qui l'illustre.
-    \item Est-ce que dans le modèle relationnel on peut avoir des 
+    \item Est-ce que dans le modèle relationnel on peut avoir des
     duplicats ? Dans SQL ?
     \item Connaissez vous le principe des clés primaires ?
     \item Pouvez vous écrire la requête permettant de ...?
-    \item Quelle est le résultat de la construction du théorème de 
+    \item Quelle est le résultat de la construction du théorème de
     \bsc{Codd} sur tel exemple ?
     \item D'où vient l'indécidabilité de la satisfiabilité ?
-    \item SQL est-il plus expressif ? Si oui, donner des exemples de 
+    \item SQL est-il plus expressif ? Si oui, donner des exemples de
     constructions supplémentaire.
     \item Quelle est l'utilité des contraintes fonctionnelles ?
 \end{itemize}
@@ -81,13 +81,16 @@
 \secreferences
 
 \begin{itemize}
-\item \input{refs/dummy}
+\item \input{refs/abiteboul}
+\item \input{refs/ullman}
 \end{itemize}
 
 \secdev
 
 \begin{itemize}
-\item \input{dev/dummy}
+\item \input{dev/conjonctivesnpcomplet}
+\item \input{dev/armstrong}
+\item \input{dev/Arbres2-4}
 \end{itemize}
 
 

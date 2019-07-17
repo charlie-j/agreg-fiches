@@ -32,9 +32,9 @@
 
 \begin{itemize}
     \item Sémantique opérationnelle (petit/grand pas) et dénotationnelle des commandes de IMP.
-    \item Équivalences entre les 
+    \item Équivalences entre les
         sémantiques.
-     \item Exemples de programmes, avec une interprétation de leur 
+     \item Exemples de programmes, avec une interprétation de leur
      correction dans une des sémantiques présentées ci-dessus.
 \end{itemize}
 
@@ -61,15 +61,15 @@
 \begin{itemize}
     \item Dans IMP, seule la non terminaison empêche d'avoir un résultat dans la sémantique à grand pas (ou dénotationnelle), ce qui n'est pas toujours le cas. En toute généralité, la non terminaison se définit plutôt à petit pas.
     \item Définir les expressions comme des termes.
-        \item On peut définir la sémantique dénotationelle du while simplement comme un sup, et ainsi éviter le formalisme des CPO.  Si on parle de point fixe, il faut connaître le théorème d'existence, et illustrer son intérêt. Par exemple, cela montre que le while et son déroulé ont la même sémantique.
-    \item Bien faire attention aux références qui prennent des directions 
-        \emph{incompatibles} très tôt. Par exemple, si le domaine de définition
-        des variables est $\mathbb{N}$ alors l'opération de soustraction 
-        doit être \emph{binaire}, alors que dans le cas de $\mathbb{Z}$ on peut 
-        se contenter d'une soustraction \emph{unaire}.
-        	\item Réfléchir aux liens avec d'autres leçons~: 
-        sémantique petit pas pour le lambda-calcul et les machines de Turing,
-        sémantique dénotationnelle pour les expressions régulière (langage).
+    \item On peut définir la sémantique dénotationelle du while simplement comme un sup, et ainsi éviter le formalisme des CPO.  Si on parle de point fixe, il faut connaître le théorème d'existence, et illustrer son intérêt. Par exemple, cela montre que le while et son déroulé ont la même sémantique.
+    \item Bien faire attention aux références qui prennent des directions
+      \emph{incompatibles} très tôt. Par exemple, si le domaine de définition
+      des variables est $\mathbb{N}$ alors l'opération de soustraction
+      doit être \emph{binaire}, alors que dans le cas de $\mathbb{Z}$ on peut
+      se contenter d'une soustraction \emph{unaire}.
+    \item Réfléchir aux liens avec d'autres leçons~:
+      sémantique petit pas pour le lambda-calcul et les machines de Turing,
+      sémantique dénotationnelle pour les expressions régulière (langage).
 \end{itemize}
 
 
@@ -78,25 +78,25 @@
 \begin{itemize}
     \item Quel est l'intérêt des différentes sémantiques ?
     \item Quelles sémantiques permettent de définir une notion de complexité ?
-%        
-%    \item Pour le programme d'une centrale nucléaire, quelle sémantique 
+%
+%    \item Pour le programme d'une centrale nucléaire, quelle sémantique
 %        paraît la plus adaptée ?
-    \item Quelles sémantiques sont utilisées en pratique pour vérifier des programmes ? 
-    
+    \item Quelles sémantiques sont utilisées en pratique pour vérifier des programmes ?
+
     \item Quelle sémantique permet de vérifier un programme qui ne termine pas ?
-    
+
     \item Peut-on faire un lien entre la sémantique dénotationnelle
         et la preuve de programme ?
-        
-    \item Calculer la sémantique dénotationnelle d'un programme 
+
+    \item Calculer la sémantique dénotationnelle d'un programme
         avec une boucle while simple (division euclidienne, fibonacci...)
-%    \item Conaissez-vous un langage pour lequel il n'y a pas 
+%    \item Conaissez-vous un langage pour lequel il n'y a pas
 %        de théorème d'adéquation ? De théorème de correction ?
-%        
+%
     \item Connaissez-vous un autre moyen de définir une sémantique ?
         (plus faible précondition)
     \item Vérifier la continuité de la fonction utilisée pour définir le WHILE ? (si il a été défini ainsi)
-    \item Comment ajouter un choix non déterministe dans 
+    \item Comment ajouter un choix non déterministe dans
         vos sémantiques ?
     \item Comment ajouter un choix probabiliste (pièce non biaisée par exemple)
         ?
@@ -117,6 +117,8 @@
 \item[++]  \input{dev/semantiqueeoperdenotequiv}
 
 \item[++]  \input{dev/semantiqueprogrammeequiv}
+
+\item[+]   \input{dev/factorielhoare}
 
 %\temporary{}
 %\item[-] \temporary{Complétude de Hoare}
