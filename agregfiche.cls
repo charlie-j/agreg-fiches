@@ -15,6 +15,8 @@
 %% Maths
 \RequirePackage{amsmath,amsthm,amssymb}
 
+\RequirePackage{xifthen}% provides \isempty test
+
 %% Définition des commandes
 
 \newcommand{\secindispensables}{\section{C\oe ur de la leçon}}
@@ -34,12 +36,24 @@
 \newcommand{\temporary}[1]{\textbf{TMP} #1 \textbf{TMP}}
 
 % \reference{IDref}{Nom du bouquin}{Auteur1,Auteur2}{à la BU/LSV}{Des commentaires trop ouf qui déchirent}
-\newcommand{\reference}[5]{[\textit{#1}] #2 - #3 - \small{#4} \\ 
-\textit{\footnotesize{#5}}  }
+\newcommand{\reference}[5]{[\textit{#1}] #2 - #3 - \small{#4} 
+ \ifthenelse{\isempty{#5}}%
+{}% if #5 is empty
+{
+    \\ 
+    \textit{\footnotesize{#5}}  
+}% if #5 is not empty    
+ }
 
 % \dev{Nom du Dev}{IDref}{p. 432}{lecon1,lecon2,lecon3}{Commentaires}
-\newcommand{\dev}[5]{ #1 - (#2,\textit{ \small{#3}}) - #4 \\ 
-\textit{\footnotesize{#5}}  }
+\newcommand{\dev}[5]{ #1 - (#2,\textit{ \small{#3}}) - #4 
+ \ifthenelse{\isempty{#5}}%
+{}% if #5 is empty
+{
+    \\ 
+\textit{\footnotesize{#5}}  
+}% if #5 is not empty    
+}
 
 % À utiliser comme \begin{rapport}{année} Copié collé  du rapport \end{rapport}
 \newenvironment{rapport}[1]
