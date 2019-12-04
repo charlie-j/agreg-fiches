@@ -8,12 +8,12 @@
 
 \secrapports
 
-\begin{rapport}{2018}
+\begin{rapport}{2019}
 
 Il s'agit de présenter un modèle de calcul : le lambda-calcul pur.
 Il est important de faire le lien avec au moins un autre modèle de calcul, par exemple les machines de Turing ou les fonctions récursives.
 Néanmoins, la leçon doit traiter des spécificités du lambda-calcul.
-Ainsi, le candidat doit motiver l'intérêt du lambda-calcul pur sur les entiers et pourra aborder la façon dont il permet de définir et d'utiliser des types de données (booléens, couples, listes, arbres).
+Ainsi, le candidat doit motiver l'intérêt du lambda-calcul pur sur les entiers et aborder la façon dont il permet de définir et d'utiliser des types de données (booléens, couples, listes, arbres).
 
 \end{rapport}
 
@@ -32,7 +32,7 @@ Ainsi, le candidat doit motiver l'intérêt du lambda-calcul pur sur les entiers
 	\item Fonctions représentables.
   	\item Stratégies d'évaluation (gauche, tête).
 	\item Exemples : fonctions arithmétiques, conditionnelle.
-	\item Exemples : fonctions récursives avec combinateur de point 
+	\item Exemples : fonctions récursives avec combinateur de point
 	fixe.
 \end{itemize}
 
@@ -52,20 +52,20 @@ Ainsi, le candidat doit motiver l'intérêt du lambda-calcul pur sur les entiers
 \begin{itemize}
     \item Ne pas sortir du cadre "modèle de calcul".
     \item Surtout ne pas parler de système de type.
-    \item Bien doser le temps passé sur la substution et l'alpha 
+    \item Bien doser le temps passé sur la substution et l'alpha
     équivalence.
-    \item Avoir en tête (ou dans ses notes) les petits exemples de 
-    bases (pour la non terminaison de la $\beta$-réduction, pour la 
+    \item Avoir en tête (ou dans ses notes) les petits exemples de
+    bases (pour la non terminaison de la $\beta$-réduction, pour la
     différence entre fortement et faiblement normalisant,...)
     %   B = (lambda x.xx)(lambda x.xx), C= (lambda y.x)B,
-    \item Voir le lien entre stratégie et appel par nom ou valeur (ou 
+    \item Voir le lien entre stratégie et appel par nom ou valeur (ou
     paresseuse)
-    dans les langages de programmations (avec exemple concret de 
+    dans les langages de programmations (avec exemple concret de
     langages).
 %    Ocaml et appel par nom, Haskell et appel par valeur
-    \item Choisir un système numérique, et en connaitre au moins un 
+    \item Choisir un système numérique, et en connaitre au moins un
     autre.
-    
+
 
 
 \end{itemize}
@@ -73,26 +73,26 @@ Ainsi, le candidat doit motiver l'intérêt du lambda-calcul pur sur les entiers
 \secquestionsclassiques
 
 \begin{itemize}
-    \item Quel est l'intérêt du $\lambda$-calcul (par rapport aux 
+    \item Quel est l'intérêt du $\lambda$-calcul (par rapport aux
     autres modèles de calcul)?
     \item Donner un contre exemple à la forte confluence.
 %     (lambda x (x+x))(3+4)
-    \item Connaissez vous une autre forme de confluence que la 
+    \item Connaissez vous une autre forme de confluence que la
     confluence ou la confluence forte ?
-%     confluence local, qui implique la confluence forte quand on a 
+%     confluence local, qui implique la confluence forte quand on a
 %une relation fortement normalisable
     \item Citer un combinateur de point fixe.
-    \item Le combinateur de point fixe donné 
-        fonctionne-t-il correctement en appel 
+    \item Le combinateur de point fixe donné
+        fonctionne-t-il correctement en appel
         par valeur ?
-    \item Écrire la factorielle en $\lambda$-calcul 
+    \item Écrire la factorielle en $\lambda$-calcul
         dans le système numérique de votre choix.
     \item Calculer la forme normale d'un terme donné.
     \item Quel est l'intérêt de la représentation forte (par rapport à la faible)
     \item Est-ce qu'un terme est $\beta$-équivalent à une unique forme de tête ?
-    \item Connaissez vous l'$\eta$-expansion ? À quoi peut-elle 
+    \item Connaissez vous l'$\eta$-expansion ? À quoi peut-elle
     servir ?
-    \item Connaissez-vous d'autres théorèmes de point fixe (même en 
+    \item Connaissez-vous d'autres théorèmes de point fixe (même en
     dehors du $\lambda$-calcul) ?
     \item Peut-on décider si un terme a une forme normale ?
 \end{itemize}
